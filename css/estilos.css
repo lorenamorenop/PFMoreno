@@ -1,9 +1,9 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@100;600&family=Roboto:wght@100;300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:wght@900&family=IBM+Plex+Sans&family=Montserrat:wght@100;600;900&family=Roboto:wght@100&display=swap');
 /*font-family: 'Alfa Slab One', cursive;
+font-family: 'Barlow', sans-serif;
+font-family: 'IBM Plex Sans', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;
-
 */
 
 *{
@@ -16,6 +16,20 @@ a{
 text-decoration: none; 
     color: black;
     position: relative;
+}
+
+.contenedor-flex{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contenedor-flex ul li {
+     list-style-type:none;
+     display: inline;
+     margin-left: 50px;
+     margin-right: 10px;
 }
 
 header a::after{
@@ -31,33 +45,13 @@ header a::after{
 
 }
 
-
 header a:hover::after{
     width: 100%;
     right: 0;
-
 }
-
-
-
-.contenedor-flex{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-   
-}
-
-.contenedor-flex ul li {
-     list-style-type:none;
-     display: inline;
-     margin-left: 50px;
-     margin-right: 10px;
-}
-
-
 
 body{
-    background-color: whitesmoke; 
+    background-color:white; 
 }
 
 h1{
@@ -68,46 +62,23 @@ h1{
 }
 
 h2{
-   
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     font-size: 50px;
     padding: 30px;
     margin-left: 200px;
-
 }
 
 h3{
-    font-family: 'Montserrat', sans-serif;
-    margin: 200;
-    margin-top: 150px;
+    font-family: 'roboto';
+    font-weight: 100;
+    font-size: 20px;
+    color: black;
+    margin-top: 30px;
     text-align: center;
 }
+   /* INDEX COMIENZA */
 
-.saludo{
-     font-size: 60px;
-     font-family: 'Roboto', sans-serif;
-     font-weight: 100;
-     margin-top: 50px;
-     margin-left: 20px;}
-
-.pHablemos{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 25px;
-    letter-spacing: 2px;
-    margin-right: 20px;
-
- }
-
-.redes{
-    margin-left: 50px;
-    font-size: 20px;
-    flex-direction: row;
-    letter-spacing:15px;
-
- 
-}
 .nombre {
     border: solid 1px black;
     padding: 25px;
@@ -125,53 +96,111 @@ h3{
     margin-left: 300px;
     margin-top: 25px;
 }
+#spanNombre{
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+   }
 
+.tituloSaludo{
+     font-size: 60px;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 100;
+     margin-top: 50px;
+     margin-left: 20px;}
+
+  /* INDEX FINALIZA */
+
+/* TITULOS  */
 .tituloGrande {
     color:  #d7391b;
     margin-top: 60px;
-    text-align: center;
+    margin-left: 160px;
     font-weight: bold;
     font-family: 'Alfa Slab One', cursive;
-    font-size: 100px;
+    font-size: 110px;
     letter-spacing: 90px;
 }
-
 .tituloGrande2{
-    color: rgba(0, 0, 0, 0.835);
+    color:  #1a1c76;
+    margin-top: 10px;
+    margin-left: 40px;
+    font-weight: bold;
+    font-family: 'Alfa Slab One', cursive;
+    font-size:100px;
+    letter-spacing: 30px;
+    position: absolute;
+}
+.tituloGrande3{
+    color: rgba(0, 0, 0, 0.781);
     margin-top: 60px;
     text-align: center;
     font-weight: bold;
     font-family: 'Alfa Slab One', cursive;
-    font-size: 80px;
-    letter-spacing: 90px;
+    font-size: 130px;
+    letter-spacing: -5px;
 }
 
-.tituloGrande3{
-    color:  #1a1c76;
-    margin-top: 60px;
-  margin-left: 40px;
-    font-weight: bold;
-    font-family: 'Alfa Slab One', cursive;
-    font-size:70px;
-    letter-spacing: 30px;
+
+/*.tituloGrande4{
+    font-size: 70px;
+    font-family: 'Alfa Slab One';
+    font-weight: 100;
+    margin-top: 50px;
+    margin-left: 20px;
+    color: rgba(0, 0, 0, 0.757);
+   }*/
+
+
+   /* TRABAJEMOS COMIENZA */
+
+.pSobreMi{
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color:#151763;
+ }
+ 
+.contenedorSobre{
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: 1, 500px;
+    margin-left: 100px;
+    margin-top: 30px;
+    column-gap: 10px;   
 }
 
-.hablemos{
-   font-family: 'Roboto', sans-serif;
-   font-size: 80px; 
-   color: black;
-   margin: 100;
-   margin-top: 50px;
-   margin-left: 400px;
-   
-   
+.caja1{
+border: solid 1px black ;
+border-right: none;
 }
+.caja2{
+    background-image: url(../IMAGENES/imagenes-pinterest/0524381b40e4d4d9c21d4c42e9048417.jpg);
+}
+
+.caja2 iframe{
+margin-left: 150px;  
+}
+
+/* TRABAJEMOS TERMINA */
+
+
+/* ULTIMO PROYECTO EMPIEZA */
+
 .carrusel{
     width: 800px;
     height: auto;
     margin-left: 300px;
-    margin-top: 50px;
+    margin-top: 80px;
+    box-shadow: 2px 2px 15px #2B2A4C;
 }
+
+/* ULTIMO PROYECTO TERMINA */
+
+/* CONTACTO EMPIEZA */
 .fraseQr{
        display: flex;
        margin-top: 150px;
@@ -180,36 +209,26 @@ h3{
        padding: 20px;
        width: 550px;
        height: auto;
-       gap: 200px;
-    
-    
+       gap: 200px;   
 }
-
-.pSobreMi{
-    width: 100%;
-    margin-top: 50px;
-    margin-left: 70px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
- }
- 
 #qrContacto{
    justify-content: right;
-    margin-right: 80px;
-  
+   margin-right: 80px;
 }
 
- 
-#spanNombre{
-    font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 30px;
-   }
+/* CONTACTO TERMINA */
 
-#spotify{
-    margin-left: 300px;
-    margin-top: 40px;
+/*  FOOTER */
+footer{
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.733);
+}
+.redes{
+    margin-left: 50px;
+    font-size: 20px;
+    flex-direction: row;
+    letter-spacing:15px;
+
 }
 #pContacto{
     color: white;
@@ -222,18 +241,12 @@ h3{
 }
 
 
-footer{
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0.733);
-}
-
 /* GALERIA DE IMAGENES  */
 #imagen1{
-  margin-left: 300px;
+  margin-left: 310px;
   margin-bottom: 50px;
  
 }
-
 
 .contenedorGaleria{
     display: grid;
@@ -242,7 +255,6 @@ footer{
     column-gap: 10px;
     row-gap: 10px;
     margin-left: 100px;
- 
 }
 
 .item{
@@ -371,37 +383,51 @@ grid-row: 2/4;
     grid-row: 6/7;
 }
 
-/* GALERIA DE IMAGENES RESPONSIVE */   
+/* RESPONSIVE */   
 
+@media (max-width: 480px) {
+    .contenedor-flex{
+        display: flex;
+        justify-content: flex-start;  
+    }
 
-@media (max-width: 600px) {
+    .contenedor-flex a{
+     font-size: 15px;
+     display: flex;
+    justify-content: flex-start;
+  }
+
     .imagenPrincipal{
-    width: 100%;
-    height: auto;
-    margin-left: 15px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
     }
 
     .tituloGrande{
-        font-size: 30px;        
-        letter-spacing: 2px;
-        margin-left: 25px;
+        display: flex;
+        justify-content: center;
+        font-size: 40px;        
+        letter-spacing: 15px;
+        width: 100%;
+        margin-left: 0;
+       
     }
+
     #imagen1 {
         width: 100%;
         height: auto;
-        margin: 10px;
+        margin: 0px;
      
     }
     .contenedorGaleria{
-      
-     grid-template-columns: 1fr;
-        grid-template-rows: repeat(19, 200px);
-        margin: 10px;
-
-
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(19, 200px);
+       margin: 5px;
       }
       
-      .item1{
+        .item1{
             background-image: url(../IMAGENES/\ imagenesGALERIA/vertical4.jpg) ;
             grid-column: 1/2;
             grid-row: 1/2;
@@ -515,4 +541,57 @@ grid-row: 2/4;
             grid-row: 18/19;
             background-position: top;
 }
-} 
+
+
+.contenedorSobre{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 200px);
+    margin: 10px;
+    margin-top: 30px;
+    column-gap: 20px;
+   
+}
+.caja1{
+    border: 2px solid  #5e6cbb;
+}
+
+.caja2 iframe{
+margin-left: 15px;
+margin-top: 30px;
+}
+
+.pSobreMi{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+    font-size: 10px;
+ }} 
+
+ @media only screen and (min-width: 481px) and (max-width:806px){
+    .contenedor-flex{
+        display: flex;
+        justify-content: flex-start;  
+    }
+    .imagenPrincipal{
+        width: 100%;
+        height: auto;
+        margin:0;
+        }
+
+    .contenedor-flex a{
+    font-size: 25px;
+     display: flex;
+    justify-content: flex-start;
+  }
+
+  .contenedorGaleria{
+    margin-left: 25px;
+}
+.tituloGrande{
+   margin-left: 160px;
+}
+
+ }
+
