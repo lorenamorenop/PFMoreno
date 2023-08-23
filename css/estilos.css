@@ -177,7 +177,7 @@ border: solid 1px black ;
 border-right: none;
 }
   .caja2{
-    background-image: url(../IMAGENES/imagenes-pinterest/0524381b40e4d4d9c21d4c42e9048417.jpg);
+    background-image: url(../imagenes/imagenes-pinterest/0524381b40e4d4d9c21d4c42e9048417.jpg);
 }
 
   .caja2 iframe{
@@ -270,93 +270,93 @@ footer{
 
 
 .item1{
-    background-image: url(../IMAGENES/\ imagenesGALERIA/vertical4.jpg);
+    background-image: url(../imagenes/imagenes-galeria/vertical4.jpg);
     grid-column: 1/2;
     grid-row: 1/3;
 }
 
 .item2{
-    background-image: url(../IMAGENES/\ imagenesGALERIA/dorperon.jpg);  
+    background-image: url(../imagenes/imagenes-galeria/dorperon.jpg);  
     grid-column: 2/3;
     grid-row: 1/2;
 }
 
 .item3{
-    background-image: url(../IMAGENES/\ imagenesGALERIA/Scotty);   
+    background-image: url(../imagenes/imagenes-galeria/Scotty.JPG);   
     grid-column: 3/4;
     grid-row: 1/2;
 }
 
 .item4{
-    background-image:url(../IMAGENES/\ imagenesGALERIA/ciana.jpg);
+    background-image:url(../imagenes/imagenes-galeria/ciana.JPG);
     grid-column: 4/5;
     grid-row: 1/2;
 }
 
 .item5{
-    background-image: url(../IMAGENES/\ imagenesGALERIA/vertical5.jpg);
+    background-image: url(../imagenes/imagenes-galeria/vertical5.jpg);
     grid-column: 2/3;
     grid-row: 2/4;
     
 
 }
 .item6{
-    background-image: url(../IMAGENES/\ imagenesGALERIA/viejo.jpg);
+    background-image: url(../imagenes/imagenes-galeria/viejo.jpg);
     grid-column: 3/5;
     grid-row: 2/3;
 }
 
 .item7{
-    background-image: url(../IMAGENES/\ imagenesGALERIA/matu.jpg);
+    background-image: url(../imagenes/imagenes-galeria/matu.jpg);
     grid-column: 1/2;
     grid-row: 3/4;
     
 }
 .item8{
-    background-image: url(../IMAGENES/\ imagenesGALERIA/marte.jpg);
+    background-image: url(../imagenes/imagenes-galeria/marte.jpg);
     grid-column: 3/4;
     grid-row: 3/4;
 
 }
 
 .item9{
-    background-image: url(../IMAGENES/\ imagenesGALERIA/marian.jpg);
+    background-image: url(../imagenes/imagenes-galeria/marian.JPG);
     grid-column: 4/5;
     grid-row: 3/4;
 
 }
 
 .item10{
-    background-image: url(../IMAGENES/\ imagenesGALERIA/mono.jpg);
+    background-image: url(../imagenes/imagenes-galeria/mono.jpg);
     grid-column: 1/3;
     grid-row: 4/5;
 }
 
 .item11{
-    background-image: url(../IMAGENES/\ imagenesGALERIA/vertical3.jpg);
+    background-image: url(../imagenes/imagenes-galeria/vertical3.jpg);
     grid-column: 3/4;
     grid-row: 4/6;
 }
 .item12{
-    background-image: url(../IMAGENES/\ imagenesGALERIA/malenillas.jpg);
+    background-image: url(../imagenes/imagenes-galeria/malenillas.JPG);
     grid-column: 1/2;
     grid-row: 5/6;
 }
 
 .item13{
-    background-image: url(../IMAGENES/\ imagenesGALERIA/manu.jpg);
+    background-image: url(../imagenes/imagenes-galeria/manu.JPG);
     grid-column: 2/3;
     grid-row: 5/6;
 }
 
 .item14{
-    background-image: url(../IMAGENES/\ imagenesGALERIA/caroylu.jpg);
+    background-image: url(../imagenes/imagenes-galeria/caroylu.JPG);
     grid-column: 4/5;
     grid-row: 4/5;
 }
 
 .item15{
-    background-image: url(../IMAGENES/\ imagenesGALERIA/lolla.jpg);
+    background-image: url(../imagenes/imagenes-galeria/lolla.JPG);
     background-size: 400px;
     background-position: bottom;
     grid-column: 4/5;
@@ -364,7 +364,7 @@ footer{
 }
 
 .item16{
-    background-image: url(../IMAGENES/\ imagenesGALERIA/playa.jpg);
+    background-image: url(../imagenes/imagenes-galeria/playa.JPG);
     grid-column: 2/4;
     grid-row: 6/7;
     background-image: 200px;
@@ -372,13 +372,13 @@ footer{
 }
 
 .item17{
-    background-image: url(../IMAGENES/\ imagenesGALERIA/beso.jpg);
+    background-image: url(../imagenes/imagenes-galeria/beso.jpg);
     grid-column: 1/2;
     grid-row: 6/7;
 }
 
 .item18{
-   background-image: url(../IMAGENES/\ imagenesGALERIA/rafa.jpg);
+   background-image: url(../imagenes/imagenes-galeria/rafa.jpg);
     grid-column: 4/5;
     grid-row: 6/7;
 }
@@ -429,93 +429,93 @@ footer{
       }
       
         .item1{
-            background-image: url(../IMAGENES/\ imagenesGALERIA/vertical4.jpg) ;
+            background-image: url(../imagenes/imagenes-galeria/vertical4.jpg) ;
             grid-column: 1/2;
             grid-row: 1/2;
         }
         
         .item2{
-            background-image: url(../IMAGENES/\ imagenesGALERIA/dorperon.jpg);  
+            background-image: url(../imagenes/imagenes-galeria/dorperon.jpg);  
             grid-column: 1/2;
             grid-row: 2/3;
         }
         
         .item3{
-            background-image: url(../IMAGENES/\ imagenesGALERIA/Scotty.jpg) ;   
+            background-image: url(../imagenes/imagenes-galeria/Scotty.JPG) ;   
             grid-column: 1/2;
             grid-row: 3/4;
         }
         
         .item4{
-           background-image:url(../IMAGENES/\ imagenesGALERIA/ciana.jpg);
+           background-image:url(../imagenes/imagenes-galeria/ciana.JPG);
            grid-column: 1/2;
            grid-row: 4/5;
         }
         
         .item5{
-            background-image: url(../IMAGENES/\ imagenesGALERIA/vertical5.jpg);
+            background-image: url(../imagenes/imagenes-galeria/vertical5.jpg);
             grid-column: 1/2;
             grid-row: 5/6;
             
         
         }
         .item6{
-            background-image: url(../IMAGENES/\ imagenesGALERIA/viejo.jpg);
+            background-image: url(../imagenes/imagenes-galeria/viejo.jpg);
             grid-column: 1/2;
             grid-row: 6/7;
         }
         
         .item7{
-            background-image: url(../IMAGENES/\ imagenesGALERIA/matu.jpg);
+            background-image: url(../imagenes/imagenes-galeria/matu.jpg);
             grid-column: 1/2;
             grid-row: 7/8;
             
         }
         .item8{
-           background-image: url(../IMAGENES/\ imagenesGALERIA/marte.jpg);
+           background-image: url(../imagenes/imagenes-galeria/marte.jpg);
             grid-column:1/2;
             grid-row: 8/9;
         
         }
         
         .item9{
-            background-image: url(../IMAGENES/\ imagenesGALERIA/marian.jpg);
+            background-image: url(../imagenes/imagenes-galeria/marian.JPG);
             grid-column: 1/2;
             grid-row: 9/10;
         
         }
         
         .item10{
-            background-image: url(../IMAGENES/\ imagenesGALERIA/mono.jpg);
+            background-image: url(../imagenes/imagenes-galeria/mono.jpg);
             grid-column: 1/2;
             grid-row: 10/11;
         }
         
         .item11{
-            background-image: url(../IMAGENES/\ imagenesGALERIA/vertical3.jpg);
+            background-image: url(../imagenes/imagenes-galeria/vertical3.jpg);
             grid-column: 1/2;
             grid-row: 11/12;
         }
         .item12{
-            background-image: url(../IMAGENES/\ imagenesGALERIA/malenillas.jpg);
+            background-image: url(../imagenes/imagenes-galeria/malenillas.JPG);
             grid-column: 1/2;
             grid-row: 12/13;
         }
         
         .item13{
-            background-image: url(../IMAGENES/\ imagenesGALERIA/manu.jpg);
+            background-image: url(../imagenes/imagenes-galeria/manu.JPG);
             grid-column:1/2;
             grid-row: 13/14;
         }
         
         .item14{
-            background-image: url(../IMAGENES/\ imagenesGALERIA/caroylu.jpg);
+            background-image: url(../imagenes/imagenes-galeria/caroylu.JPG);
             grid-column: 1/2;
             grid-row: 14/15;
         }
         
         .item15{
-            background-image: url(../IMAGENES/\ imagenesGALERIA/lolla.jpg);
+            background-image: url(../imagenes/imagenes-galeria/lolla.JPG);
             background-size: 400px;
             background-position: bottom;
             grid-column: 1/2;
@@ -523,7 +523,7 @@ footer{
         }
         
         .item16{
-            background-image: url(../IMAGENES/\ imagenesGALERIA/playa.jpg);
+            background-image: url(../imagenes/imagenes-galeria/playa.JPG);
             grid-column: 1/2;
             grid-row: 16/17;
             background-image: 200px;
@@ -531,13 +531,13 @@ footer{
         }
         
         .item17{
-            background-image: url(../IMAGENES/\ imagenesGALERIA/beso.jpg);
+            background-image: url(../imagenes/imagenes-galeria/beso.jpg);
             grid-column: 1/2;
             grid-row: 17/18;
         }
         
         .item18{
-           background-image: url(../IMAGENES/\ imagenesGALERIA/rafa.jpg);
+           background-image: url(../imagenes/imagenes-galeria/rafa.jpg);
             grid-column: 1/2;
             grid-row: 18/19;
             background-position: top;
