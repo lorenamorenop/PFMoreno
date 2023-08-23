@@ -580,6 +580,40 @@ margin-top: 30px;
     font-size: 10px;
  }} 
 
+ @media only screen and (min-width: 481px) and (max-width: 806px){
+    .contenedor-flex{
+        display: flex;
+        justify-content: flex-start;  
+    }
+
+    .contenedor-flex a{
+    font-size: 25px;
+     display: flex;
+    justify-content: flex-start;
+  }
+  .contenedor-imagenPrincipal{
+    height: auto;
+}
+.contenedor-imagenPrincipal img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+}
+  
+  .tituloGrande{
+   margin-left: 160px;
+}
+  .contenedorGaleria{
+    margin-left: 25px;
+}
+
+
+ }
+
+
+
 
     
  
