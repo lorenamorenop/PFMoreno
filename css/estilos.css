@@ -1,615 +1,627 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:wght@900&family=IBM+Plex+Sans&family=Montserrat:wght@100;600;900&family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:wght@900&family=IBM+Plex+Sans&family=Montserrat:wght@100;600;900&family=Roboto:wght@100&display=swap");
 /*font-family: 'Alfa Slab One', cursive;
 font-family: 'Barlow', sans-serif;
 font-family: 'IBM Plex Sans', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-a{
-text-decoration: none; 
-    color: black;
-    position: relative;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.contenedor-flex{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    margin-top: 10px;
+a {
+  text-decoration: none;
+  color: black;
+  position: relative;
 }
 
-.contenedor-flex ul li {
-     list-style-type:none;
-     display: inline;
-     margin-left: 50px;
-     margin-right: 10px;
+.contenedor-flex {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 10px;
+}
+.contenedor-flex li {
+  list-style-type: none;
+  display: inline;
+  margin-left: 50px;
+  margin-right: 10px;
 }
 
-header a::after{
- content: "";
- width: 0;
- height: 2px;
- background-color: #615ebb;
- position: absolute;
- bottom: 0;
- right: 50%;
- transition: all .5s;
- will-change: width;
-
+header a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #615ebb;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all 0.5s;
+  will-change: width;
 }
 
-header a:hover::after{
-    width: 100%;
-    right: 0;
+header a:hover::after {
+  width: 100%;
+  right: 0;
 }
 
-body{
-    background-color:white; 
+body {
+  background-color: white;
 }
 
-h1{
-    font-family: 'Roboto', sans-serif;
-     font-size: 23px; 
-    color: black;
-    margin: 100;
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  color: black;
+  margin: 100;
 }
 
-h2{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-size: 50px;
-    padding: 30px;
-    margin-left: 200px;
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+  padding: 30px;
+  margin-left: 200px;
 }
 
-h3{
-    font-family: 'roboto';
-    font-weight: 100;
-    font-size: 20px;
-    color: black;
-    margin-top: 30px;
-    text-align: center;
+h3 {
+  font-family: "roboto";
+  font-weight: 100;
+  font-size: 20px;
+  color: black;
+  margin-top: 30px;
+  text-align: center;
 }
-   /* INDEX COMIENZA */
 
+/* INDEX COMIENZA */
 .nombre {
-    border: solid 1px black;
-    padding: 25px;
-    display:inline-block ;
-    font-size: 30px;
-    font-family: Arial;
-    width: 120px;
-    height: 110px;
-    margin-left:35px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+  border: solid 1px black;
+  padding: 25px;
+  display: inline-block;
+  font-size: 30px;
+  font-family: Arial;
+  width: 120px;
+  height: 110px;
+  margin-left: 35px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .contenedor-imagenPrincipal {
-    display: flex;
-    justify-content: center; 
-    height: 550px;
-    margin-top: 50px;
-   
+  display: flex;
+  justify-content: center;
+  height: 550px;
+  margin-top: 50px;
+}
+.contenedor-imagenPrincipal img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: aparecer 3s;
+  animation-fill-mode: forwards;
 }
 
-.contenedor-imagenPrincipal img{
-    max-width: 100%;
-    height: auto;
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-#spanNombre{
-    font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 30px;
-   }
+#spanNombre {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
 
-.tituloSaludo{
-     font-size: 60px;
-     font-family: 'Roboto', sans-serif;
-     font-weight: 100;
-     margin-top: 50px;
-     margin-left: 20px;}
+.tituloSaludo {
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  margin-top: 50px;
+  margin-left: 20px;
+}
 
-  /* INDEX FINALIZA */
-
- /* TITULOS  */
+/* TITULOS  */
 .tituloGrande {
-    color:  #d7391b;
-    margin-top: 60px;
-    margin-left: 160px;
-    font-weight: bold;
-    font-family: 'Alfa Slab One', cursive;
-    font-size: 110px;
-    letter-spacing: 90px;
-}
-.tituloGrande2{
-    color:  #1a1c76;
-    margin-top: 10px;
-    margin-left: 40px;
-    font-weight: bold;
-    font-family: 'Alfa Slab One', cursive;
-    font-size:100px;
-    letter-spacing: 30px;
-    position: absolute;
-}
-.tituloGrande3{
-    color: rgba(0, 0, 0, 0.781);
-    margin-top: 60px;
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Alfa Slab One', cursive;
-    font-size: 130px;
-    letter-spacing: -5px;
+  margin-top: 60px;
+  color: #d7391b;
+  font-weight: bold;
+  margin-left: 160px;
+  font-size: 110px;
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 90px;
 }
 
-
-
-   /* TRABAJEMOS COMIENZA */
-
-.pSobreMi{
-    width: 100%;
-    margin-top: 50px;
-    margin-left: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    font-size: 20px;
-    color:#151763;
- }
- 
-.contenedorSobre{
-    display: grid;
-    grid-template-columns: repeat(2, 600px);
-    grid-template-rows: 1, 500px;
-    margin-left: 100px;
-    margin-top: 30px;
-    column-gap: 10px;   
+.tituloGrande2 {
+  margin-top: 10px;
+  color: #1a1c76;
+  font-weight: bold;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 100px;
+  letter-spacing: 30px;
+  position: absolute;
+  margin-left: 40px;
 }
 
-  .caja1{
-border: solid 1px black ;
-border-right: none;
-}
-  .caja2{
-    background-image: url(../imagenes/imagenes-pinterest/0524381b40e4d4d9c21d4c42e9048417.jpg);
+.contenedorTitulo {
+  position: relative;
+  height: 150px;
 }
 
-  .caja2 iframe{
-margin-left: 150px;  
+.tituloGrande3 {
+  position: absolute;
+  color: #3e6f45;
+  top: 65px;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 70px;
+  letter-spacing: 7px;
 }
 
-/* TRABAJEMOS TERMINA */
+.tituloGrande3b {
+  position: absolute;
+  color: #e5b31b;
+  z-index: 2;
+  top: 55px;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 70px;
+  letter-spacing: 7px;
+}
 
+/* TRABAJEMOS COMIENZA */
+.pSobreMi {
+  margin-top: 50px;
+  margin-left: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: #151763;
+  width: 100%;
+}
+
+.contenedorTrabajemos {
+  display: grid;
+  grid-template-columns: repeat(4, 350px);
+  grid-template-rows: repeat(11, 100px);
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.contenedorTrabajemos .caja {
+  border: solid black 1px;
+  background-position: center;
+}
+.contenedorTrabajemos .caja1 {
+  grid-column: 1/3;
+  grid-row: 1/6;
+}
+.contenedorTrabajemos .caja2 {
+  background-image: url(../imagenes/cartera.jpg);
+  grid-column: 3/4;
+  grid-row: 1/6;
+}
+.contenedorTrabajemos .caja3 {
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+.contenedorTrabajemos .caja4 {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+.contenedorTrabajemos .caja5 {
+  grid-column: 4/5;
+  grid-row: 4/6;
+}
+.contenedorTrabajemos .caja5 p {
+  margin-top: 25px;
+  margin-left: 15px;
+}
+.contenedorTrabajemos .caja6 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+.contenedorTrabajemos .caja7 {
+  grid-column: 1/2;
+  grid-row: 7/9;
+}
+.contenedorTrabajemos .caja7 p {
+  margin-top: 25px;
+  margin-left: 15px;
+}
+.contenedorTrabajemos .caja8 {
+  grid-column: 1/2;
+  grid-row: 9/11;
+}
+.contenedorTrabajemos .caja9 {
+  grid-column: 2/3;
+  grid-row: 6/11;
+  background-image: url(../imagenes/fashion1.jpg);
+}
+.contenedorTrabajemos .caja10 {
+  grid-column: 3/4;
+  grid-row: 6/7;
+}
+.contenedorTrabajemos .caja11 {
+  grid-column: 3/4;
+  grid-row: 7/9;
+}
+.contenedorTrabajemos .caja11 p {
+  margin-top: 25px;
+  margin-left: 15px;
+}
+.contenedorTrabajemos .caja12 {
+  grid-column: 3/4;
+  grid-row: 9/11;
+}
+.contenedorTrabajemos .caja13 {
+  grid-column: 4/5;
+  grid-row: 6/11;
+  background-image: url(../imagenes/fashion3.jpg);
+}
 
 /* ULTIMO PROYECTO EMPIEZA */
-
-.carrusel{
-    width: 800px;
-    height: auto;
-    margin-left: 300px;
-    margin-top: 80px;
-    box-shadow: 2px 2px 15px #2B2A4C;
+.carrusel {
+  height: auto;
+  margin-left: 300px;
+  margin-top: 80px;
+  width: 800px;
+  box-shadow: 2px 2px 15px #2B2A4C;
 }
-
-/* ULTIMO PROYECTO TERMINA */
 
 /* CONTACTO EMPIEZA */
-
-.fraseQr{
-       display: flex;
-       margin-top: 150px;
-       padding:  2px solid #2B2A4C;
-       border: solid 1px #2B2A4C;
-       padding: 20px;
-       width: 550px;
-       height: auto;
-       gap: 200px;   
-}
-#qrContacto{
-   justify-content: right;
-   margin-right: 80px;
-}
-
 /* CONTACTO TERMINA */
-
 /*  FOOTER */
-footer{
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0.737);
-}
-.redes{
-    margin-left: 50px;
-    font-size: 20px;
-    flex-direction: row;
-    letter-spacing:15px;
-
-}
-#pContacto{
-    color: white;
-    margin-left: 50px;
-    margin-top: 150px;
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+footer {
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.737);
 }
 
+.redes {
+  margin-left: 50px;
+  font-size: 20px;
+  flex-direction: row;
+  letter-spacing: 15px;
+}
+
+#pContacto {
+  color: white;
+  margin-left: 50px;
+  margin-top: 150px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
 
 /* GALERIA DE IMAGENES  */
-#imagen1{
+#imagen1 {
   margin-left: 310px;
   margin-bottom: 50px;
- 
 }
 
-.contenedorGaleria{
-    display: grid;
-    grid-template-columns: repeat(4, 300px);
-    grid-template-rows: repeat(7, 200px);
-    column-gap: 10px;
-    row-gap: 10px;
-    margin-left: 100px;
+.contenedorGaleria {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(7, 200px);
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-left: 100px;
 }
 
-.item{
-    background-size: cover;
-    background-position: center;
-    transition: 1s;
+.item {
+  background-size: cover;
+  background-position: center;
+  transition: 1s;
 }
 
-.item:hover{
-    transform: scale(1.2);
-    z-index: 2;
+.item:hover {
+  transform: scale(1.2);
+  z-index: 2;
 }
 
-
-.item1{
-    background-image: url(../imagenes/vertical4.jpg);
-    grid-column: 1/2;
-    grid-row: 1/3;
+.item1 {
+  background-image: url(../imagenes/vertical4.jpg);
+  grid-column: 1/2;
+  grid-row: 1/3;
 }
 
-.item2{
-    background-image: url(../imagenes/dorperon.jpg);  
-    grid-column: 2/3;
-    grid-row: 1/2;
+.item2 {
+  background-image: url(../imagenes/dorperon.jpg);
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 
-.item3{
-    background-image: url(../imagenes/Scotty.JPG);   
-    grid-column: 3/4;
-    grid-row: 1/2;
+.item3 {
+  background-image: url(../imagenes/Scotty.JPG);
+  grid-column: 3/4;
+  grid-row: 1/2;
 }
 
-.item4{
-    background-image:url(../imagenes/ciana.JPG);
-    grid-column: 4/5;
-    grid-row: 1/2;
+.item4 {
+  background-image: url(../imagenes/ciana.JPG);
+  grid-column: 4/5;
+  grid-row: 1/2;
 }
 
-.item5{
-    background-image: url(../imagenes/vertical5.jpg);
-    grid-column: 2/3;
-    grid-row: 2/4;
-    
-
-}
-.item6{
-    background-image: url(../imagenes/viejo.jpg);
-    grid-column: 3/5;
-    grid-row: 2/3;
+.item5 {
+  background-image: url(../imagenes/vertical5.jpg);
+  grid-column: 2/3;
+  grid-row: 2/4;
 }
 
-.item7{
-    background-image: url(../imagenes/matu.jpg);
-    grid-column: 1/2;
-    grid-row: 3/4;
-    
-}
-.item8{
-    background-image: url(../imagenes/marte.jpg);
-    grid-column: 3/4;
-    grid-row: 3/4;
-
+.item6 {
+  background-image: url(../imagenes/viejo.jpg);
+  grid-column: 3/5;
+  grid-row: 2/3;
 }
 
-.item9{
-    background-image: url(../imagenes/marian.JPG);
-    grid-column: 4/5;
-    grid-row: 3/4;
-
+.item7 {
+  background-image: url(../imagenes/matu.jpg);
+  grid-column: 1/2;
+  grid-row: 3/4;
 }
 
-.item10{
-    background-image: url(../imagenes/mono.jpg);
-    grid-column: 1/3;
-    grid-row: 4/5;
+.item8 {
+  background-image: url(../imagenes/marte.jpg);
+  grid-column: 3/4;
+  grid-row: 3/4;
 }
 
-.item11{
-    background-image: url(../imagenes/vertical3.jpg);
-    grid-column: 3/4;
-    grid-row: 4/6;
-}
-.item12{
-    background-image: url(../imagenes/malenillas.JPG);
-    grid-column: 1/2;
-    grid-row: 5/6;
+.item9 {
+  background-image: url(../imagenes/marian.JPG);
+  grid-column: 4/5;
+  grid-row: 3/4;
 }
 
-.item13{
-    background-image: url(../imagenes/manu.JPG);
-    grid-column: 2/3;
-    grid-row: 5/6;
+.item10 {
+  background-image: url(../imagenes/mono.jpg);
+  grid-column: 1/3;
+  grid-row: 4/5;
 }
 
-.item14{
-    background-image: url(../imagenes/caroylu.JPG);
-    grid-column: 4/5;
-    grid-row: 4/5;
+.item11 {
+  background-image: url(../imagenes/vertical3.jpg);
+  grid-column: 3/4;
+  grid-row: 4/6;
 }
 
-.item15{
-    background-image: url(../imagenes/lolla.JPG);
-    background-size: 400px;
-    background-position: bottom;
-    grid-column: 4/5;
-    grid-row: 5/6;
+.item12 {
+  background-image: url(../imagenes/malenillas.JPG);
+  grid-column: 1/2;
+  grid-row: 5/6;
 }
 
-.item16{
-    background-image: url(../imagenes/playa.JPG);
-    grid-column: 2/4;
-    grid-row: 6/7;
-    background-image: 200px;
-    background-position: bottom;
+.item13 {
+  background-image: url(../imagenes/manu.JPG);
+  grid-column: 2/3;
+  grid-row: 5/6;
 }
 
-.item17{
-    background-image: url(../imagenes/beso.jpg);
-    grid-column: 1/2;
-    grid-row: 6/7;
+.item14 {
+  background-image: url(../imagenes/caroylu.JPG);
+  grid-column: 4/5;
+  grid-row: 4/5;
 }
 
-.item18{
-   background-image: url(../imagenes/rafa.jpg);
-    grid-column: 4/5;
-    grid-row: 6/7;
+.item15 {
+  background-image: url(../imagenes/lolla.JPG);
+  background-size: 400px;
+  background-position: bottom;
+  grid-column: 4/5;
+  grid-row: 5/6;
 }
 
-/* RESPONSIVE */   
+.item16 {
+  background-image: url(../imagenes/playa.JPG);
+  grid-column: 2/4;
+  grid-row: 6/7;
+  background-image: 200px;
+  background-position: bottom;
+}
 
+.item17 {
+  background-image: url(../imagenes/beso.jpg);
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+
+.item18 {
+  background-image: url(../imagenes/rafa.jpg);
+  grid-column: 4/5;
+  grid-row: 6/7;
+}
+
+/* RESPONSIVE */
 @media (max-width: 480px) {
-    .contenedor-flex{
-        display: flex;
-        justify-content: flex-start;  
-    }
-
-    .contenedor-flex a{
-     font-size: 15px;
-     display: flex;
+  .contenedor-flex {
+    display: flex;
     justify-content: flex-start;
   }
-
-    .tituloGrande{
-        display: flex;
-        justify-content: center;
-        font-size: 40px;        
-        letter-spacing: 15px;
-        width: 100%;
-        margin-left: 0;
-       
-    }
-    .contenedor-imagenPrincipal{
-        height: auto;
-    }
-    .contenedor-imagenPrincipal img{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        margin-left: 0px;
-    }
-    #imagen1 {
-        width: 100%;
-        height: auto;
-        margin: 0px;
-     
-    }
-    .contenedorGaleria{
-       grid-template-columns: 1fr;
-       grid-template-rows: repeat(19, 200px);
-       margin: 5px;
-      }
-      
-        .item1{
-            background-image: url(../imagenes/vertical4.jpg) ;
-            grid-column: 1/2;
-            grid-row: 1/2;
-        }
-        
-        .item2{
-            background-image: url(../imagenes/dorperon.jpg);  
-            grid-column: 1/2;
-            grid-row: 2/3;
-        }
-        
-        .item3{
-            background-image: url(../imagenes/Scotty.JPG) ;   
-            grid-column: 1/2;
-            grid-row: 3/4;
-        }
-        
-        .item4{
-           background-image:url(../imagenes/ciana.JPG);
-           grid-column: 1/2;
-           grid-row: 4/5;
-        }
-        
-        .item5{
-            background-image: url(../imagenes/vertical5.jpg);
-            grid-column: 1/2;
-            grid-row: 5/6;
-            
-        
-        }
-        .item6{
-            background-image: url(../imagenes/viejo.jpg);
-            grid-column: 1/2;
-            grid-row: 6/7;
-        }
-        
-        .item7{
-            background-image: url(../imagenes/matu.jpg);
-            grid-column: 1/2;
-            grid-row: 7/8;
-            
-        }
-        .item8{
-           background-image: url(../imagenes/marte.jpg);
-            grid-column:1/2;
-            grid-row: 8/9;
-        
-        }
-        
-        .item9{
-            background-image: url(../imagenes/marian.JPG);
-            grid-column: 1/2;
-            grid-row: 9/10;
-        
-        }
-        
-        .item10{
-            background-image: url(../imagenes/mono.jpg);
-            grid-column: 1/2;
-            grid-row: 10/11;
-        }
-        
-        .item11{
-            background-image: url(../imagenes/vertical3.jpg);
-            grid-column: 1/2;
-            grid-row: 11/12;
-        }
-        .item12{
-            background-image: url(../imagenes/malenillas.JPG);
-            grid-column: 1/2;
-            grid-row: 12/13;
-        }
-        
-        .item13{
-            background-image: url(../imagenes/manu.JPG);
-            grid-column:1/2;
-            grid-row: 13/14;
-        }
-        
-        .item14{
-            background-image: url(../imagenes/caroylu.JPG);
-            grid-column: 1/2;
-            grid-row: 14/15;
-        }
-        
-        .item15{
-            background-image: url(../imagenes/lolla.JPG);
-            background-size: 400px;
-            background-position: bottom;
-            grid-column: 1/2;
-            grid-row: 15/16;
-        }
-        
-        .item16{
-            background-image: url(../imagenes/playa.JPG);
-            grid-column: 1/2;
-            grid-row: 16/17;
-            background-image: 200px;
-            background-position: bottom;
-        }
-        
-        .item17{
-            background-image: url(../imagenes/beso.jpg);
-            grid-column: 1/2;
-            grid-row: 17/18;
-        }
-        
-        .item18{
-           background-image: url(../imagenes/rafa.jpg);
-            grid-column: 1/2;
-            grid-row: 18/19;
-            background-position: top;
-}
-
-
-.contenedorSobre{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 200px);
-    margin: 10px;
-    margin-top: 30px;
-    column-gap: 20px;
-   
-}
-.caja1{
-    border: 2px solid  #5e6cbb;
-}
-
-.caja2 iframe{
-margin-left: 15px;
-margin-top: 30px;
-}
-
-.pSobreMi{
+  .contenedor-flex a {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .tituloGrande {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    letter-spacing: 15px;
     width: 100%;
-    margin-top: 20px;
-    margin-left: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-weight:bold;
-    font-size: 10px;
- }} 
-
- @media only screen and (min-width: 481px) and (max-width: 806px){
-    .contenedor-flex{
-        display: flex;
-        justify-content: flex-start;  
-    }
-
-    .contenedor-flex a{
-    font-size: 25px;
-     display: flex;
-    justify-content: flex-start;
+    margin-left: 0;
   }
-   .contenedor-imagenPrincipal{
+  .contenedor-imagenPrincipal {
     height: auto;
-}
-   .contenedor-imagenPrincipal img{
+  }
+  .contenedor-imagenPrincipal img {
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
     margin-left: 0px;
+  }
+  #imagen1 {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+  }
+  .contenedorGaleria {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(19, 200px);
+    margin: 5px;
+  }
+  .item1 {
+    background-image: url(../imagenes/vertical4.jpg);
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .item2 {
+    background-image: url(../imagenes/dorperon.jpg);
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .item3 {
+    background-image: url(../imagenes/Scotty.JPG);
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .item4 {
+    background-image: url(../imagenes/ciana.JPG);
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .item5 {
+    background-image: url(../imagenes/vertical5.jpg);
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .item6 {
+    background-image: url(../imagenes/viejo.jpg);
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .item7 {
+    background-image: url(../imagenes/matu.jpg);
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  .item8 {
+    background-image: url(../imagenes/marte.jpg);
+    grid-column: 1/2;
+    grid-row: 8/9;
+  }
+  .item9 {
+    background-image: url(../imagenes/marian.JPG);
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+  .item10 {
+    background-image: url(../imagenes/mono.jpg);
+    grid-column: 1/2;
+    grid-row: 10/11;
+  }
+  .item11 {
+    background-image: url(../imagenes/vertical3.jpg);
+    grid-column: 1/2;
+    grid-row: 11/12;
+  }
+  .item12 {
+    background-image: url(../imagenes/malenillas.JPG);
+    grid-column: 1/2;
+    grid-row: 12/13;
+  }
+  .item13 {
+    background-image: url(../imagenes/manu.JPG);
+    grid-column: 1/2;
+    grid-row: 13/14;
+  }
+  .item14 {
+    background-image: url(../imagenes/caroylu.JPG);
+    grid-column: 1/2;
+    grid-row: 14/15;
+  }
+  .item15 {
+    background-image: url(../imagenes/lolla.JPG);
+    background-size: 400px;
+    background-position: bottom;
+    grid-column: 1/2;
+    grid-row: 15/16;
+  }
+  .item16 {
+    background-image: url(../imagenes/playa.JPG);
+    grid-column: 1/2;
+    grid-row: 16/17;
+    background-image: 200px;
+    background-position: bottom;
+  }
+  .item17 {
+    background-image: url(../imagenes/beso.jpg);
+    grid-column: 1/2;
+    grid-row: 17/18;
+  }
+  .item18 {
+    background-image: url(../imagenes/rafa.jpg);
+    grid-column: 1/2;
+    grid-row: 18/19;
+    background-position: top;
+  }
+  .contenedorSobre {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 200px);
+    margin: 10px;
+    margin-top: 30px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+  .caja1 {
+    border: 2px solid #5e6cbb;
+  }
+  .caja2 iframe {
+    margin-left: 15px;
+    margin-top: 30px;
+  }
+  .pSobreMi {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+  }
 }
-    .contenedorGaleria{
+@media only screen and (min-width: 481px) and (max-width: 806px) {
+  .contenedor-flex {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .contenedor-flex a {
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .contenedor-imagenPrincipal {
+    height: auto;
+  }
+  .contenedor-imagenPrincipal img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+  }
+  .contenedorGaleria {
     margin-left: 25px;
+  }
+  .tituloGrande {
+    margin-left: 160px;
+  }
 }
-  .tituloGrande{
-   margin-left: 160px;
+@media only screen and (min-width: 807px) and (max-width: 1305px) {
+  .contenedor-imagenPrincipal {
+    height: auto;
+  }
 }
-
-
-
- }
-
- @media only screen and (min-width: 807px) and (max-width: 1305px) {
-
-    .contenedor-imagenPrincipal{
-        height: auto;
-        }
-    
- }
-
-
-    
- 
+/*# sourceMappingURL=estilos.css.map */
