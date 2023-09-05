@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:wght@900&family=IBM+Plex+Sans&family=Montserrat:wght@100;600;900&family=Roboto:wght@100&display=swap");
 /*font-family: 'Alfa Slab One', cursive;
 font-family: 'Barlow', sans-serif;
@@ -117,6 +118,14 @@ h3 {
   font-size: 30px;
 }
 
+.parrafo-index {
+  font-weight: 100;
+  font-size: 20px;
+  color: black;
+  margin-top: 30px;
+  text-align: center;
+}
+
 .tituloSaludo {
   font-size: 60px;
   font-family: "Roboto", sans-serif;
@@ -147,41 +156,7 @@ h3 {
   margin-left: 40px;
 }
 
-.contenedorTitulo {
-  position: relative;
-  height: 150px;
-}
-
-.tituloGrande3 {
-  position: absolute;
-  color: #3e6f45;
-  top: 65px;
-  font-family: "Alfa Slab One", cursive;
-  font-size: 70px;
-  letter-spacing: 7px;
-}
-
-.tituloGrande3b {
-  position: absolute;
-  color: #e5b31b;
-  z-index: 2;
-  top: 55px;
-  font-family: "Alfa Slab One", cursive;
-  font-size: 70px;
-  letter-spacing: 7px;
-}
-
 /* TRABAJEMOS COMIENZA */
-.pSobreMi {
-  margin-top: 50px;
-  margin-left: 30px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
-  color: #151763;
-  width: 100%;
-}
-
 .contenedorTrabajemos {
   display: grid;
   grid-template-columns: repeat(4, 350px);
@@ -190,7 +165,7 @@ h3 {
   margin-top: 40px;
 }
 .contenedorTrabajemos .caja {
-  border: solid black 1px;
+  border: solid #1a1c76 1.5px;
   background-position: center;
 }
 .contenedorTrabajemos .caja1 {
@@ -267,10 +242,82 @@ h3 {
   margin-left: 300px;
   margin-top: 80px;
   width: 800px;
-  box-shadow: 2px 2px 15px #2B2A4C;
+  box-shadow: 2px 2px 15px #2b2a4c;
 }
 
 /* CONTACTO EMPIEZA */
+.contenedorContacto {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(2, 200px);
+  margin-left: 20vw;
+  margin-top: 70px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 30px;
+}
+.contenedorContacto .box {
+  background-position: center;
+  background-size: cover;
+  position: relative; /* Establece una posición relativa para que ::before sea relativo a este elemento */
+  overflow: hidden;
+}
+.contenedorContacto .box1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-image: url(../imagenes/byn.jpg);
+}
+.contenedorContacto .box2 {
+  grid-column: 2/4;
+  grid-row: 1/3;
+  background-image: url(../imagenes/byn2.jpg);
+}
+.contenedorContacto .box2 h1 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 80px;
+  overflow: hidden;
+  margin-top: 90px;
+  margin-left: 10px;
+  letter-spacing: -5px;
+  color: white;
+}
+.contenedorContacto .box3 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+.contenedorContacto .box4 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-image: url(../imagenes/byn.jpg);
+}
+.contenedorContacto .box5 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  background-image: url(../imagenes/qr.jpeg);
+}
+.contenedorContacto .box6 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 123, 255);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.contenedorContacto .box6:hover {
+  opacity: 0;
+}
+.contenedorContacto .box7 {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+.contenedorContacto .box7 h2 {
+  text-align: center;
+}
+
 /* CONTACTO TERMINA */
 /*  FOOTER */
 footer {
@@ -310,125 +357,105 @@ footer {
   row-gap: 10px;
   margin-left: 100px;
 }
-
-.item {
+.contenedorGaleria .item {
   background-size: cover;
   background-position: center;
   transition: 1s;
 }
-
-.item:hover {
+.contenedorGaleria .item:hover {
   transform: scale(1.2);
   z-index: 2;
 }
-
-.item1 {
+.contenedorGaleria .item1 {
   background-image: url(../imagenes/vertical4.jpg);
   grid-column: 1/2;
   grid-row: 1/3;
 }
-
-.item2 {
+.contenedorGaleria .item2 {
   background-image: url(../imagenes/dorperon.jpg);
   grid-column: 2/3;
   grid-row: 1/2;
 }
-
-.item3 {
+.contenedorGaleria .item3 {
   background-image: url(../imagenes/Scotty.JPG);
   grid-column: 3/4;
   grid-row: 1/2;
 }
-
-.item4 {
+.contenedorGaleria .item4 {
   background-image: url(../imagenes/ciana.JPG);
   grid-column: 4/5;
   grid-row: 1/2;
 }
-
-.item5 {
+.contenedorGaleria .item5 {
   background-image: url(../imagenes/vertical5.jpg);
   grid-column: 2/3;
   grid-row: 2/4;
 }
-
-.item6 {
+.contenedorGaleria .item6 {
   background-image: url(../imagenes/viejo.jpg);
   grid-column: 3/5;
   grid-row: 2/3;
 }
-
-.item7 {
+.contenedorGaleria .item7 {
   background-image: url(../imagenes/matu.jpg);
   grid-column: 1/2;
   grid-row: 3/4;
 }
-
-.item8 {
+.contenedorGaleria .item8 {
   background-image: url(../imagenes/marte.jpg);
   grid-column: 3/4;
   grid-row: 3/4;
 }
-
-.item9 {
+.contenedorGaleria .item9 {
   background-image: url(../imagenes/marian.JPG);
   grid-column: 4/5;
   grid-row: 3/4;
 }
-
-.item10 {
+.contenedorGaleria .item10 {
   background-image: url(../imagenes/mono.jpg);
   grid-column: 1/3;
   grid-row: 4/5;
 }
-
-.item11 {
+.contenedorGaleria .item11 {
   background-image: url(../imagenes/vertical3.jpg);
   grid-column: 3/4;
   grid-row: 4/6;
 }
-
-.item12 {
+.contenedorGaleria .item12 {
   background-image: url(../imagenes/malenillas.JPG);
   grid-column: 1/2;
   grid-row: 5/6;
 }
-
-.item13 {
+.contenedorGaleria .item13 {
   background-image: url(../imagenes/manu.JPG);
   grid-column: 2/3;
   grid-row: 5/6;
 }
-
-.item14 {
+.contenedorGaleria .item14 {
   background-image: url(../imagenes/caroylu.JPG);
   grid-column: 4/5;
   grid-row: 4/5;
 }
-
-.item15 {
+.contenedorGaleria .item15 {
   background-image: url(../imagenes/lolla.JPG);
   background-size: 400px;
   background-position: bottom;
   grid-column: 4/5;
   grid-row: 5/6;
 }
-
-.item16 {
+.contenedorGaleria .item16 {
   background-image: url(../imagenes/playa.JPG);
   grid-column: 2/4;
   grid-row: 6/7;
   background-image: 200px;
   background-position: bottom;
 }
-
-.item17 {
+.contenedorGaleria .item17 {
   background-image: url(../imagenes/beso.jpg);
   grid-column: 1/2;
   grid-row: 6/7;
 }
-
-.item18 {
+.contenedorGaleria .item18 {
   background-image: url(../imagenes/rafa.jpg);
   grid-column: 4/5;
   grid-row: 6/7;
@@ -567,29 +594,6 @@ footer {
     grid-column: 1/2;
     grid-row: 18/19;
     background-position: top;
-  }
-  .contenedorSobre {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 200px);
-    margin: 10px;
-    margin-top: 30px;
-    -moz-column-gap: 20px;
-    column-gap: 20px;
-  }
-  .caja1 {
-    border: 2px solid #5e6cbb;
-  }
-  .caja2 iframe {
-    margin-left: 15px;
-    margin-top: 30px;
-  }
-  .pSobreMi {
-    width: 100%;
-    margin-top: 20px;
-    margin-left: 10px;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 10px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 806px) {
