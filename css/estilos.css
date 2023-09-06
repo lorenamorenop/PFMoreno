@@ -330,6 +330,7 @@ footer {
   font-weight: 100;
 }
 
+/*  FOOTER */
 /* GALERIA DE IMAGENES  */
 #imagen1 {
   margin-left: 310px;
@@ -341,109 +342,129 @@ footer {
   grid-template-columns: repeat(4, 300px);
   grid-template-rows: repeat(7, 200px);
   -moz-column-gap: 10px;
-  column-gap: 10px;
+       column-gap: 10px;
   row-gap: 10px;
   margin-left: 100px;
 }
-.contenedorGaleria .item {
+
+.item {
   background-size: cover;
   background-position: center;
   transition: 1s;
 }
-.contenedorGaleria .item:hover {
+
+.item:hover {
   transform: scale(1.2);
   z-index: 2;
 }
-.contenedorGaleria .item1 {
+
+.item1 {
   background-image: url(../imagenes/vertical4.jpg);
   grid-column: 1/2;
   grid-row: 1/3;
 }
-.contenedorGaleria .item2 {
+
+.item2 {
   background-image: url(../imagenes/dorperon.jpg);
   grid-column: 2/3;
   grid-row: 1/2;
 }
-.contenedorGaleria .item3 {
+
+.item3 {
   background-image: url(../imagenes/Scotty.JPG);
   grid-column: 3/4;
   grid-row: 1/2;
 }
-.contenedorGaleria .item4 {
+
+.item4 {
   background-image: url(../imagenes/ciana.JPG);
   grid-column: 4/5;
   grid-row: 1/2;
 }
-.contenedorGaleria .item5 {
+
+.item5 {
   background-image: url(../imagenes/vertical5.jpg);
   grid-column: 2/3;
   grid-row: 2/4;
 }
-.contenedorGaleria .item6 {
+
+.item6 {
   background-image: url(../imagenes/viejo.jpg);
   grid-column: 3/5;
   grid-row: 2/3;
 }
-.contenedorGaleria .item7 {
+
+.item7 {
   background-image: url(../imagenes/matu.jpg);
   grid-column: 1/2;
   grid-row: 3/4;
 }
-.contenedorGaleria .item8 {
+
+.item8 {
   background-image: url(../imagenes/marte.jpg);
   grid-column: 3/4;
   grid-row: 3/4;
 }
-.contenedorGaleria .item9 {
+
+.item9 {
   background-image: url(../imagenes/marian.JPG);
   grid-column: 4/5;
   grid-row: 3/4;
 }
-.contenedorGaleria .item10 {
+
+.item10 {
   background-image: url(../imagenes/mono.jpg);
   grid-column: 1/3;
   grid-row: 4/5;
 }
-.contenedorGaleria .item11 {
+
+.item11 {
   background-image: url(../imagenes/vertical3.jpg);
   grid-column: 3/4;
   grid-row: 4/6;
 }
-.contenedorGaleria .item12 {
+
+.item12 {
   background-image: url(../imagenes/malenillas.JPG);
   grid-column: 1/2;
   grid-row: 5/6;
 }
-.contenedorGaleria .item13 {
+
+.item13 {
   background-image: url(../imagenes/manu.JPG);
   grid-column: 2/3;
   grid-row: 5/6;
 }
-.contenedorGaleria .item14 {
+
+.item14 {
   background-image: url(../imagenes/caroylu.JPG);
   grid-column: 4/5;
   grid-row: 4/5;
 }
-.contenedorGaleria .item15 {
+
+.item15 {
   background-image: url(../imagenes/lolla.JPG);
   background-size: 400px;
   background-position: bottom;
   grid-column: 4/5;
   grid-row: 5/6;
 }
-.contenedorGaleria .item16 {
+
+.item16 {
   background-image: url(../imagenes/playa.JPG);
   grid-column: 2/4;
   grid-row: 6/7;
   background-image: 200px;
   background-position: bottom;
 }
-.contenedorGaleria .item17 {
+
+.item17 {
   background-image: url(../imagenes/beso.jpg);
   grid-column: 1/2;
   grid-row: 6/7;
 }
-.contenedorGaleria .item18 {
+
+.item18 {
   background-image: url(../imagenes/rafa.jpg);
   grid-column: 4/5;
   grid-row: 6/7;
@@ -475,6 +496,7 @@ footer {
     margin: 0px;
   }
   .contenedorGaleria {
+    height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(19, 200px);
     margin: 5px;
@@ -587,7 +609,7 @@ footer {
     margin-left: 0px;
   }
   .contenedorGaleria {
-    margin-left: 25px;
+    margin-left: 30px;
   }
   .tituloGrande {
     margin-left: 160px;
