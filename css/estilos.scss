@@ -26,21 +26,21 @@ header .navbar{
         text-decoration: none;
         color: black;
         position: relative;
-        ::after {
-            content: "";
-            width: 0;
-            height: 2px;
-            background-color: $azulClaro ;
-            position: absolute;
-            bottom: 0;
-            right: 50%;
-            transition: all 0.5s;
-            will-change: width;
-        }
-        :hover::after {
-            width: 100%;
-            right: 0;
-        }
+}
+::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: $azulClaro ;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+}
+a:hover::after {
+    width: 100%;
+    right: 0;
 }
 }
 
@@ -171,6 +171,7 @@ h3 {
     box-shadow: 2px 2px 15px #2b2a4c;
 }
 /* ULTIMO PROYECTO TERMINA */
+
 /* CONTACTO EMPIEZA */
 .contenedorContacto {
     display: grid;
@@ -180,7 +181,7 @@ h3 {
     margin-top: 70px;
     column-gap: 30px;
     row-gap: 30px;
-
+}
 .box {
     background-position: center;
     background-size: cover;
@@ -227,8 +228,8 @@ h3 {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 123, 255,);
-    opacity: 1;
+    background-color: $azul;
+    opacity: 0.8;
     transition: opacity 0.3s ease;
 }
 .box6:hover {

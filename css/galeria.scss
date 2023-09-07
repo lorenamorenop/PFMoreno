@@ -1,10 +1,27 @@
-/* GALERIA DE IMAGENES  */
-#imagen1 {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$alto-cuenta: 50vh;
+$ancho-cuenta: 50vw;
+$titulo-font: "Alfa Slab One", cursive;
+$azul: #1a1c76;
+$azulClaro: #615ebb;
+
+.contenedorImagen1{
     display: flex;
     justify-content: center;
-    margin-left: 310px;
+    align-items: center;
+    width: 700px;
+    height: auto;
     margin-bottom: 50px;
 }
+#imagen1 {
+    width: 100%;
+    margin: 0 auto;
+}
+
 
 .contenedorGaleria {
     display: grid;
@@ -137,16 +154,20 @@
 
 
 @media (max-width: 480px) {
+    .contenedorImagen1{
+        height: auto;
+    }
     #imagen1 {
+        display: flex;
+        justify-content: center;
         width: 100%;
         height: auto;
-        margin: 0px;
+        margin-left: 0px;
     }
     .contenedorGaleria {
         height: auto;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(19, 200px);
-        margin: 5px;
     }
     .item1 {
         background-image: url(../imagenes/vertical4.jpg);

@@ -20,7 +20,7 @@ header .navbar {
   color: black;
   position: relative;
 }
-.nav-item a ::after {
+.nav-item ::after {
   content: "";
   width: 0;
   height: 2px;
@@ -31,7 +31,7 @@ header .navbar {
   transition: all 0.5s;
   will-change: width;
 }
-.nav-item a :hover::after {
+.nav-item a:hover::after {
   width: 100%;
   right: 0;
 }
@@ -128,6 +128,7 @@ h3 {
   margin-left: 20px;
 }
 
+/* INDEX TERMINA */
 /* TITULOS  */
 .tituloGrande {
   margin-top: 60px;
@@ -151,12 +152,17 @@ h3 {
 }
 
 /* TRABAJEMOS COMIENZA */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .contenedorTrabajemos {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(4, 350px);
   grid-template-rows: repeat(11, 100px);
-  margin-left: 20px;
-  margin-top: 40px;
 }
 .contenedorTrabajemos .caja {
   border: solid #1a1c76 1.5px;
@@ -230,6 +236,52 @@ h3 {
   background-image: url(../imagenes/fashion3.jpg);
 }
 
+@media (max-width: 480px) {
+  .contenedorTrabajemos {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(20, 100px);
+    width: 100%;
+    margin-left: 50px;
+  }
+  .contenedorTrabajemos .caja1 {
+    grid-column: 1/3;
+    grid-row: 1/6;
+  }
+  .contenedorTrabajemos .caja2 {
+    background-image: url(../imagenes/cartera.jpg);
+    grid-column: 1/2;
+    grid-row: 11/15;
+  }
+  .contenedorTrabajemos .caja3 {
+    grid-column: 2/3;
+    grid-row: 11/13;
+  }
+  .contenedorTrabajemos .caja4 {
+    grid-column: 2/3;
+    grid-row: 13/14;
+  }
+  .contenedorTrabajemos .caja5 {
+    grid-column: 2/3;
+    grid-row: 14/16;
+  }
+  .contenedorTrabajemos .caja10 {
+    grid-column: 1/2;
+    grid-row: 16/17;
+  }
+  .contenedorTrabajemos .caja11 {
+    grid-column: 1/2;
+    grid-row: 17/19;
+  }
+  .contenedorTrabajemos .caja12 {
+    grid-column: 1/2;
+    grid-row: 19/20;
+  }
+  .contenedorTrabajemos .caja13 {
+    grid-column: 2/3;
+    grid-row: 16/20;
+    background-image: url(../imagenes/fashion3.jpg);
+  }
+}
 /* ULTIMO PROYECTO EMPIEZA */
 .carrusel {
   height: auto;
@@ -239,6 +291,7 @@ h3 {
   box-shadow: 2px 2px 15px #2b2a4c;
 }
 
+/* ULTIMO PROYECTO TERMINA */
 /* CONTACTO EMPIEZA */
 .contenedorContacto {
   display: grid;
@@ -250,23 +303,26 @@ h3 {
        column-gap: 30px;
   row-gap: 30px;
 }
-.contenedorContacto .box {
+
+.box {
   background-position: center;
   background-size: cover;
   position: relative;
   overflow: hidden;
 }
-.contenedorContacto .box1 {
+
+.box1 {
   grid-column: 1/2;
   grid-row: 1/2;
   background-image: url(../imagenes/byn.jpg);
 }
-.contenedorContacto .box2 {
+
+.box2 {
   grid-column: 2/4;
   grid-row: 1/3;
   background-image: url(../imagenes/byn2.jpg);
 }
-.contenedorContacto .box2 h1 {
+.box2 h1 {
   font-family: "Alfa Slab One", cursive;
   font-size: 80px;
   overflow: hidden;
@@ -275,32 +331,37 @@ h3 {
   letter-spacing: -5px;
   color: white;
 }
-.contenedorContacto .box3 {
+
+.box3 {
   grid-column: 4/5;
   grid-row: 1/2;
 }
-.contenedorContacto .box4 {
+
+.box4 {
   grid-column: 1/2;
   grid-row: 2/3;
   background-image: url(../imagenes/byn.jpg);
 }
-.contenedorContacto .box5 {
+
+.box5 {
   grid-column: 4/5;
   grid-row: 2/3;
   background-image: url(../imagenes/qr.jpeg);
 }
-.contenedorContacto .box6 {
+
+.box6 {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(0, 123, 255);
-  opacity: 1;
+  background-color: #1a1c76;
+  opacity: 0.8;
   transition: opacity 0.3s ease;
 }
-.contenedorContacto .box6:hover {
+
+.box6:hover {
   opacity: 0;
 }
 
@@ -310,8 +371,7 @@ footer {
   height: 30px;
   background-color: rgba(0, 0, 0, 0.737);
 }
-
-.redes {
+footer .redes {
   margin-left: 50px;
   font-size: 20px;
   flex-direction: row;
@@ -330,20 +390,32 @@ footer {
 
 /*  FOOTER */
 /* GALERIA DE IMAGENES EMPIEZA  */
-/* GALERIA DE IMAGENES  */
-#imagen1 {
-  margin-left: 310px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedorImagen1 {
+  display: flex;
+  justify-content: center;
+  height: 550px;
   margin-bottom: 50px;
+}
+
+#imagen1 {
+  max-width: 100%;
+  height: auto;
 }
 
 .contenedorGaleria {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(4, 300px);
   grid-template-rows: repeat(7, 200px);
   -moz-column-gap: 10px;
        column-gap: 10px;
   row-gap: 10px;
-  margin-left: 100px;
 }
 
 .item {
@@ -479,7 +551,6 @@ footer {
     height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(19, 200px);
-    margin: 5px;
   }
   .item1 {
     background-image: url(../imagenes/vertical4.jpg);

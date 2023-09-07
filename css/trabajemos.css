@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedorTrabajemos {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 350px);
+  grid-template-rows: repeat(11, 100px);
+}
+.contenedorTrabajemos .caja {
+  border: solid #1a1c76 1.5px;
+  background-position: center;
+}
+.contenedorTrabajemos .caja1 {
+  grid-column: 1/3;
+  grid-row: 1/6;
+}
+.contenedorTrabajemos .caja2 {
+  background-image: url(../imagenes/cartera.jpg);
+  grid-column: 3/4;
+  grid-row: 1/6;
+}
+.contenedorTrabajemos .caja3 {
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+.contenedorTrabajemos .caja4 {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+.contenedorTrabajemos .caja5 {
+  grid-column: 4/5;
+  grid-row: 4/6;
+}
+.contenedorTrabajemos .caja5 p {
+  margin-top: 25px;
+  margin-left: 15px;
+}
+.contenedorTrabajemos .caja6 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+.contenedorTrabajemos .caja7 {
+  grid-column: 1/2;
+  grid-row: 7/9;
+}
+.contenedorTrabajemos .caja7 p {
+  margin-top: 25px;
+  margin-left: 15px;
+}
+.contenedorTrabajemos .caja8 {
+  grid-column: 1/2;
+  grid-row: 9/11;
+}
+.contenedorTrabajemos .caja9 {
+  grid-column: 2/3;
+  grid-row: 6/11;
+  background-image: url(../imagenes/fashion1.jpg);
+}
+.contenedorTrabajemos .caja10 {
+  grid-column: 3/4;
+  grid-row: 6/7;
+}
+.contenedorTrabajemos .caja11 {
+  grid-column: 3/4;
+  grid-row: 7/9;
+}
+.contenedorTrabajemos .caja11 p {
+  margin-top: 25px;
+  margin-left: 15px;
+}
+.contenedorTrabajemos .caja12 {
+  grid-column: 3/4;
+  grid-row: 9/11;
+}
+.contenedorTrabajemos .caja13 {
+  grid-column: 4/5;
+  grid-row: 6/11;
+  background-image: url(../imagenes/fashion3.jpg);
+}
+
+@media (max-width: 480px) {
+  .contenedorTrabajemos {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(20, 100px);
+    width: 100%;
+    margin-left: 50px;
+  }
+  .contenedorTrabajemos .caja1 {
+    grid-column: 1/3;
+    grid-row: 1/6;
+  }
+  .contenedorTrabajemos .caja2 {
+    background-image: url(../imagenes/cartera.jpg);
+    grid-column: 1/2;
+    grid-row: 11/15;
+  }
+  .contenedorTrabajemos .caja3 {
+    grid-column: 2/3;
+    grid-row: 11/13;
+  }
+  .contenedorTrabajemos .caja4 {
+    grid-column: 2/3;
+    grid-row: 13/14;
+  }
+  .contenedorTrabajemos .caja5 {
+    grid-column: 2/3;
+    grid-row: 14/16;
+  }
+  .contenedorTrabajemos .caja10 {
+    grid-column: 1/2;
+    grid-row: 16/17;
+  }
+  .contenedorTrabajemos .caja11 {
+    grid-column: 1/2;
+    grid-row: 17/19;
+  }
+  .contenedorTrabajemos .caja12 {
+    grid-column: 1/2;
+    grid-row: 19/20;
+  }
+  .contenedorTrabajemos .caja13 {
+    grid-column: 2/3;
+    grid-row: 16/20;
+    background-image: url(../imagenes/fashion3.jpg);
+  }
+}/*# sourceMappingURL=trabajemos.css.map */
