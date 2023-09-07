@@ -1,0 +1,81 @@
+.contenedorTrabajemos {
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-template-rows: repeat(11, 100px);
+    margin-left: 20px;
+    margin-top: 40px;
+
+.caja {
+    border: solid $azul 1.5px;
+    background-position: center;
+}
+.caja1 {
+    grid-column: 1/3;
+    grid-row: 1/6;
+}
+.caja2 {
+    background-image: url(../imagenes/cartera.jpg);
+    grid-column: 3/4;
+    grid-row: 1/6;
+}
+.caja3 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+.caja4 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+.caja5 {
+    grid-column: 4/5;
+    grid-row: 4/6;
+
+    p {
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+}
+.caja6 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+.caja7 {
+    grid-column: 1/2;
+    grid-row: 7/9;
+
+    p {
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+}
+.caja8 {
+    grid-column: 1/2;
+    grid-row: 9/11;
+}
+.caja9 {
+    grid-column: 2/3;
+    grid-row: 6/11;
+    background-image: url(../imagenes/fashion1.jpg);
+}
+.caja10 {
+    grid-column: 3/4;
+    grid-row: 6/7;
+}
+.caja11 {
+    grid-column: 3/4;
+    grid-row: 7/9;
+    p {
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+}
+.caja12 {
+    grid-column: 3/4;
+    grid-row: 9/11;
+}
+.caja13 {
+    grid-column: 4/5;
+    grid-row: 6/11;
+    background-image: url(../imagenes/fashion3.jpg);
+}
+}

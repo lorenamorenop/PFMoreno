@@ -20,8 +20,7 @@ header .navbar {
   color: black;
   position: relative;
 }
-
-header a::after {
+.nav-item a ::after {
   content: "";
   width: 0;
   height: 2px;
@@ -32,8 +31,7 @@ header a::after {
   transition: all 0.5s;
   will-change: width;
 }
-
-header a:hover::after {
+.nav-item a :hover::after {
   width: 100%;
   right: 0;
 }
@@ -331,6 +329,7 @@ footer {
 }
 
 /*  FOOTER */
+/* GALERIA DE IMAGENES EMPIEZA  */
 /* GALERIA DE IMAGENES  */
 #imagen1 {
   margin-left: 310px;
@@ -470,26 +469,7 @@ footer {
   grid-row: 6/7;
 }
 
-/* RESPONSIVE */
 @media (max-width: 480px) {
-  .tituloGrande {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    letter-spacing: 15px;
-    width: 100%;
-    margin-left: 0;
-  }
-  .contenedor-imagenPrincipal {
-    height: auto;
-  }
-  .contenedor-imagenPrincipal img {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-  }
   #imagen1 {
     width: 100%;
     height: auto;
@@ -598,20 +578,10 @@ footer {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 806px) {
-  .contenedor-imagenPrincipal {
-    height: auto;
-  }
-  .contenedor-imagenPrincipal img {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-  }
   .contenedorGaleria {
     height: auto;
     grid-template-columns: repeat(2, 500px);
-    grid-template-rows: repeat(16, 350px);
+    grid-template-rows: repeat(12, 350px);
     margin-left: 200px;
   }
   .contenedorGaleria .item3 {
@@ -682,6 +652,40 @@ footer {
     background-image: url(../imagenes/rafa.jpg);
     grid-column: 2/3;
     grid-row: 11/12;
+  }
+}
+/* GALERIA DE IMAGENES TERMINA  */
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .tituloGrande {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    letter-spacing: 15px;
+    width: 100%;
+    margin-left: 0;
+  }
+  .contenedor-imagenPrincipal {
+    height: auto;
+  }
+  .contenedor-imagenPrincipal img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 806px) {
+  .contenedor-imagenPrincipal {
+    height: auto;
+  }
+  .contenedor-imagenPrincipal img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
   }
   .tituloGrande {
     margin-left: 160px;

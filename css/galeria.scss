@@ -1,0 +1,338 @@
+/* GALERIA DE IMAGENES  */
+#imagen1 {
+    display: flex;
+    justify-content: center;
+    margin-left: 310px;
+    margin-bottom: 50px;
+}
+
+.contenedorGaleria {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(7, 200px);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.item {
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.item:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.item1 {
+    background-image: url(../imagenes/vertical4.jpg);
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.item2 {
+    background-image: url(../imagenes/dorperon.jpg);
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.item3 {
+    background-image: url(../imagenes/Scotty.JPG);
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.item4 {
+    background-image: url(../imagenes/ciana.JPG);
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.item5 {
+    background-image: url(../imagenes/vertical5.jpg);
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.item6 {
+    background-image: url(../imagenes/viejo.jpg);
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+
+.item7 {
+    background-image: url(../imagenes/matu.jpg);
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.item8 {
+    background-image: url(../imagenes/marte.jpg);
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.item9 {
+    background-image: url(../imagenes/marian.JPG);
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+.item10 {
+    background-image: url(../imagenes/mono.jpg);
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+.item11 {
+    background-image: url(../imagenes/vertical3.jpg);
+    grid-column: 3/4;
+    grid-row: 4/6;
+}
+
+.item12 {
+    background-image: url(../imagenes/malenillas.JPG);
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.item13 {
+    background-image: url(../imagenes/manu.JPG);
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.item14 {
+    background-image: url(../imagenes/caroylu.JPG);
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+.item15 {
+    background-image: url(../imagenes/lolla.JPG);
+    background-size: 400px;
+    background-position: bottom;
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+
+.item16 {
+    background-image: url(../imagenes/playa.JPG);
+    grid-column: 2/4;
+    grid-row: 6/7;
+    background-image: 200px;
+    background-position: bottom;
+}
+
+.item17 {
+    background-image: url(../imagenes/beso.jpg);
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+.item18 {
+    background-image: url(../imagenes/rafa.jpg);
+    grid-column: 4/5;
+    grid-row: 6/7;
+}
+
+
+@media (max-width: 480px) {
+    #imagen1 {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+    .contenedorGaleria {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(19, 200px);
+        margin: 5px;
+    }
+    .item1 {
+        background-image: url(../imagenes/vertical4.jpg);
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .item2 {
+        background-image: url(../imagenes/dorperon.jpg);
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .item3 {
+        background-image: url(../imagenes/Scotty.JPG);
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .item4 {
+        background-image: url(../imagenes/ciana.JPG);
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .item5 {
+        background-image: url(../imagenes/vertical5.jpg);
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .item6 {
+        background-image: url(../imagenes/viejo.jpg);
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    .item7 {
+        background-image: url(../imagenes/matu.jpg);
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    .item8 {
+        background-image: url(../imagenes/marte.jpg);
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+    .item9 {
+        background-image: url(../imagenes/marian.JPG);
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
+    .item10 {
+        background-image: url(../imagenes/mono.jpg);
+        grid-column: 1/2;
+        grid-row: 10/11;
+    }
+    .item11 {
+        background-image: url(../imagenes/vertical3.jpg);
+        grid-column: 1/2;
+        grid-row: 11/12;
+    }
+    .item12 {
+        background-image: url(../imagenes/malenillas.JPG);
+        grid-column: 1/2;
+        grid-row: 12/13;
+    }
+    .item13 {
+        background-image: url(../imagenes/manu.JPG);
+        grid-column: 1/2;
+        grid-row: 13/14;
+    }
+    .item14 {
+        background-image: url(../imagenes/caroylu.JPG);
+        grid-column: 1/2;
+        grid-row: 14/15;
+    }
+    .item15 {
+        background-image: url(../imagenes/lolla.JPG);
+        background-size: 400px;
+        background-position: bottom;
+        grid-column: 1/2;
+        grid-row: 15/16;
+    }
+    .item16 {
+        background-image: url(../imagenes/playa.JPG);
+        grid-column: 1/2;
+        grid-row: 16/17;
+        background-image: 200px;
+        background-position: bottom;
+    }
+    .item17 {
+        background-image: url(../imagenes/beso.jpg);
+        grid-column: 1/2;
+        grid-row: 17/18;
+    }
+    .item18 {
+        background-image: url(../imagenes/rafa.jpg);
+        grid-column: 1/2;
+        grid-row: 18/19;
+        background-position: top;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 806px){
+    .contenedorGaleria {
+        height: auto;
+        grid-template-columns: repeat( 2, 500px);
+        grid-template-rows: repeat(12, 350px);
+        margin-left: 200px;
+    
+        
+        .item3 {
+            background-image: url(../imagenes/Scotty.JPG);
+            grid-column: 1/2;
+            grid-row: 5/6;
+        }
+        
+        .item4 {
+            background-image: url(../imagenes/ciana.JPG);
+            grid-column: 2/3;
+            grid-row: 5/6;
+        }
+        
+        .item6 {
+            background-image: url(../imagenes/viejo.jpg);
+            grid-column: 1/2;
+            grid-row: 6/7;
+        }
+        
+        .item8 {
+            background-image: url(../imagenes/marte.jpg);
+            grid-column: 2/3;
+            grid-row: 6/7;
+        }
+        
+        .item9 {
+            background-image: url(../imagenes/marian.JPG);
+            grid-column: 1/2;
+            grid-row: 7/8;
+        }
+        
+        
+        .item11 {
+            background-image: url(../imagenes/vertical3.jpg);
+            grid-column: 2/3;
+            grid-row: 7/9;
+        }
+        
+        .item12 {
+            background-image: url(../imagenes/malenillas.JPG);
+            grid-column: 1/2;
+            grid-row: 8/9;
+        }
+        
+        .item13 {
+            background-image: url(../imagenes/manu.JPG);
+            grid-column: 1/2;
+            grid-row: 9/10;
+        }
+        
+        .item14 {
+            background-image: url(../imagenes/caroylu.JPG);
+            grid-column: 2/3;
+            grid-row: 9/10;
+        }
+        .item15 {
+            background-image: url(../imagenes/lolla.JPG);
+            background-size: 400px;
+            background-position: bottom;
+            grid-column: 1/2;
+            grid-row: 10/11;
+        }
+        
+        .item16 {
+            background-image: url(../imagenes/playa.JPG);
+            grid-column: 2/3;
+            grid-row: 10/11;
+            background-image: 200px;
+            background-position: bottom;
+        }
+        
+        .item17 {
+            background-image: url(../imagenes/beso.jpg);
+            grid-column: 1/2;
+            grid-row: 11/12;
+        }
+        
+        .item18 {
+            background-image: url(../imagenes/rafa.jpg);
+            grid-column: 2/3;
+            grid-row: 11/12;
+        }
+    }
+}
