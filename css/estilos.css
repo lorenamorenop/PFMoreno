@@ -609,15 +609,86 @@ footer {
     margin-left: 0px;
   }
   .contenedorGaleria {
-    margin-left: 30px;
+    height: auto;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: repeat(16, 350px);
+    margin-left: 200px;
+  }
+  .contenedorGaleria .item3 {
+    background-image: url(../imagenes/Scotty.JPG);
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .contenedorGaleria .item4 {
+    background-image: url(../imagenes/ciana.JPG);
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+  .contenedorGaleria .item6 {
+    background-image: url(../imagenes/viejo.jpg);
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .contenedorGaleria .item8 {
+    background-image: url(../imagenes/marte.jpg);
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+  .contenedorGaleria .item9 {
+    background-image: url(../imagenes/marian.JPG);
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  .contenedorGaleria .item11 {
+    background-image: url(../imagenes/vertical3.jpg);
+    grid-column: 2/3;
+    grid-row: 7/9;
+  }
+  .contenedorGaleria .item12 {
+    background-image: url(../imagenes/malenillas.JPG);
+    grid-column: 1/2;
+    grid-row: 8/9;
+  }
+  .contenedorGaleria .item13 {
+    background-image: url(../imagenes/manu.JPG);
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+  .contenedorGaleria .item14 {
+    background-image: url(../imagenes/caroylu.JPG);
+    grid-column: 2/3;
+    grid-row: 9/10;
+  }
+  .contenedorGaleria .item15 {
+    background-image: url(../imagenes/lolla.JPG);
+    background-size: 400px;
+    background-position: bottom;
+    grid-column: 1/2;
+    grid-row: 10/11;
+  }
+  .contenedorGaleria .item16 {
+    background-image: url(../imagenes/playa.JPG);
+    grid-column: 2/3;
+    grid-row: 10/11;
+    background-image: 200px;
+    background-position: bottom;
+  }
+  .contenedorGaleria .item17 {
+    background-image: url(../imagenes/beso.jpg);
+    grid-column: 1/2;
+    grid-row: 11/12;
+  }
+  .contenedorGaleria .item18 {
+    background-image: url(../imagenes/rafa.jpg);
+    grid-column: 2/3;
+    grid-row: 11/12;
   }
   .tituloGrande {
     margin-left: 160px;
   }
 }
-@media only screen and (min-width: 807px) and (max-width: 1305px) {
+@media only screen and (min-width: 481px) and (max-width: 806px) and (min-width: 807px) and (max-width: 1305px) {
   .contenedor-imagenPrincipal {
     height: auto;
   }
-}
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

@@ -150,14 +150,14 @@ h3 {
 }
 
 .tituloGrande2 {
-  margin-top: 10px;
-  color: $azul;
-  font-weight: bold;
-  font-family: $titulo-font;
-  font-size: 100px;
-  letter-spacing: 30px;
-  position: absolute;
-  margin-left: 40px;
+    margin-top: 10px;
+    color: $azul;
+    font-weight: bold;
+    font-family: $titulo-font;
+    font-size: 100px;
+    letter-spacing: 30px;
+    position: absolute;
+    margin-left: 40px;
 }
 
 /* TRABAJEMOS COMIENZA */
@@ -618,16 +618,103 @@ footer {
 }
 }
 .contenedorGaleria {
-    margin-left: 30px;
+    height: auto;
+    grid-template-columns: repeat( 2, 500px);
+    grid-template-rows: repeat(16, 350px);
+    margin-left: 200px;
+
+    
+    .item3 {
+        background-image: url(../imagenes/Scotty.JPG);
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    
+    .item4 {
+        background-image: url(../imagenes/ciana.JPG);
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    
+    .item6 {
+        background-image: url(../imagenes/viejo.jpg);
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    
+    .item8 {
+        background-image: url(../imagenes/marte.jpg);
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+    
+    .item9 {
+        background-image: url(../imagenes/marian.JPG);
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    
+    
+    .item11 {
+        background-image: url(../imagenes/vertical3.jpg);
+        grid-column: 2/3;
+        grid-row: 7/9;
+    }
+    
+    .item12 {
+        background-image: url(../imagenes/malenillas.JPG);
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+    
+    .item13 {
+        background-image: url(../imagenes/manu.JPG);
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
+    
+    .item14 {
+        background-image: url(../imagenes/caroylu.JPG);
+        grid-column: 2/3;
+        grid-row: 9/10;
+    }
+    .item15 {
+        background-image: url(../imagenes/lolla.JPG);
+        background-size: 400px;
+        background-position: bottom;
+        grid-column: 1/2;
+        grid-row: 10/11;
+    }
+    
+    .item16 {
+        background-image: url(../imagenes/playa.JPG);
+        grid-column: 2/3;
+        grid-row: 10/11;
+        background-image: 200px;
+        background-position: bottom;
+    }
+    
+    .item17 {
+        background-image: url(../imagenes/beso.jpg);
+        grid-column: 1/2;
+        grid-row: 11/12;
+    }
+    
+    .item18 {
+        background-image: url(../imagenes/rafa.jpg);
+        grid-column: 2/3;
+        grid-row: 11/12;
+    }
 }
+
 .tituloGrande {
     margin-left: 160px;
 }
-}
+
 @media only screen and (min-width: 807px) and (max-width: 1305px) {
 .contenedor-imagenPrincipal {
     height: auto;
 }
 }
+}
 
-/*# sourceMappingURL=estilos.css.map */
