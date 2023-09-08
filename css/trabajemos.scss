@@ -8,6 +8,8 @@ $ancho-cuenta: 50vw;
 $titulo-font: "Alfa Slab One", cursive;
 $azul: #1a1c76;
 $azulClaro: #615ebb;
+$rojo: #d7391b;
+
 
 .contenedorTrabajemos {
     display: grid;
@@ -18,10 +20,20 @@ $azulClaro: #615ebb;
 .caja {
     border: solid $azul 1.5px;
     background-position: center;
+    }
 }
 .caja1 {
     grid-column: 1/3;
     grid-row: 1/6;
+    background-image: url(../imagenes/silabyn.jpg);
+    h1{
+    font-family: $titulo-font;
+    font-size: 80px;
+    margin-top: 20px;
+    margin-left: 80px;
+    letter-spacing: 2px;
+    color: $rojo;
+}
 }
 .caja2 {
     background-image: url(../imagenes/cartera.jpg);
@@ -88,17 +100,24 @@ $azulClaro: #615ebb;
     grid-row: 6/11;
     background-image: url(../imagenes/fashion3.jpg);
 }
-}
-@media (max-width: 480px){
+
+@media only screen and (min-width: 320px) and (max-width: 600px){
+
     .contenedorTrabajemos {
-        grid-template-columns: repeat(2, 250px);
+        grid-template-columns: repeat(2, 20px);
         grid-template-rows: repeat(20, 100px);
         width: 100%;
-        margin-left: 50px;
+
 
         .caja1 {
             grid-column: 1/3;
             grid-row: 1/6;
+            h1{
+                font-family: $titulo-font;
+                font-size: 40px;
+                margin-left: 10px;
+                color: $rojo;
+            }
         }
         .caja2 {
             background-image: url(../imagenes/cartera.jpg);
@@ -136,6 +155,54 @@ $azulClaro: #615ebb;
         }
 }
 }
-@media only screen and (min-width: 481px) and (max-width: 806px){
+@media only screen and (min-width: 602px) and (max-width: 768px){
+    .contenedorTrabajemos {
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(20, 100px);
+        width: 100%;
+        margin-left: 50px;
+
+        .caja1 {
+            grid-column: 1/3;
+            grid-row: 1/6;
+    
+        }
+        .caja2 {
+            background-image: url(../imagenes/cartera.jpg);
+            grid-column: 1/2;
+            grid-row: 11/15;
+        }
+        .caja3 {
+            grid-column: 2/3;
+            grid-row: 11/13;
+        }
+        .caja4 {
+            grid-column: 2/3;
+            grid-row: 13/14;
+        }
+        .caja5 {
+            grid-column: 2/3;
+            grid-row: 14/16;
+        }
+        .caja10 {
+            grid-column: 1/2;
+            grid-row: 16/17;
+        }
+        .caja11 {
+            grid-column: 1/2;
+            grid-row: 17/19;
+        }
+        .caja12 {
+            grid-column: 1/2;
+            grid-row: 19/20;
+        }
+        .caja13 {
+            grid-column: 2/3;
+            grid-row: 16/20;
+            background-image: url(../imagenes/fashion3.jpg);
+        }
+}
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px){
 
 }

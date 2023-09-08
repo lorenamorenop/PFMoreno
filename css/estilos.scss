@@ -11,6 +11,7 @@ $ancho-cuenta: 50vw;
 $titulo-font: "Alfa Slab One", cursive;
 $azul: #1a1c76;
 $azulClaro: #615ebb;
+$rojo: #d7391b;
 
 * {
     margin: 0;
@@ -136,17 +137,15 @@ h3 {
 }
 /* INDEX TERMINA */
 
-/* TITULOS  */
-.tituloGrande {
-    margin-top: 60px;
-    color: #d7391b;
-    font-weight: bold;
-    margin-left: 160px;
-    font-size: 110px;
-    font-family: $titulo-font;
-    letter-spacing: 90px;
-}
+/* TRABAJEMOS COMIENZA */
 
+@import "trabajemos.scss";
+
+/* TRABAJEMOS TERMINA */
+
+
+
+/* ULTIMO PROYECTO EMPIEZA */
 .tituloGrande2 {
     margin-top: 10px;
     color: $azul;
@@ -157,12 +156,6 @@ h3 {
     position: absolute;
     margin-left: 40px;
 }
-
-/* TRABAJEMOS COMIENZA */
-
-@import "trabajemos";
-
-/* ULTIMO PROYECTO EMPIEZA */
 .carrusel {
     height: auto;
     margin-left: 300px;
@@ -264,16 +257,9 @@ footer {
 /* GALERIA DE IMAGENES TERMINA  */
 
 /* RESPONSIVE */
-@media (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
 
-.tituloGrande {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    letter-spacing: 15px;
-    width: 100%;
-    margin-left: 0;
-}
+
 .contenedor-imagenPrincipal {
     height: auto;
     img {
@@ -285,7 +271,7 @@ footer {
     }
 }    
 }
-@media only screen and (min-width: 481px) and (max-width: 806px) {
+@media only screen and (min-width: 602px) and (max-width: 768px){
 
     .contenedor-imagenPrincipal {
     height: auto;
@@ -298,12 +284,7 @@ footer {
 }
 }
 
-
-.tituloGrande {
-    margin-left: 160px;
-}
-
-@media only screen and (min-width: 807px) and (max-width: 1305px) {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
 .contenedor-imagenPrincipal {
     height: auto;
 }

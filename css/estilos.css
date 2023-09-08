@@ -129,28 +129,6 @@ h3 {
 }
 
 /* INDEX TERMINA */
-/* TITULOS  */
-.tituloGrande {
-  margin-top: 60px;
-  color: #d7391b;
-  font-weight: bold;
-  margin-left: 160px;
-  font-size: 110px;
-  font-family: "Alfa Slab One", cursive;
-  letter-spacing: 90px;
-}
-
-.tituloGrande2 {
-  margin-top: 10px;
-  color: #1a1c76;
-  font-weight: bold;
-  font-family: "Alfa Slab One", cursive;
-  font-size: 100px;
-  letter-spacing: 30px;
-  position: absolute;
-  margin-left: 40px;
-}
-
 /* TRABAJEMOS COMIENZA */
 * {
   margin: 0;
@@ -168,75 +146,148 @@ h3 {
   border: solid #1a1c76 1.5px;
   background-position: center;
 }
-.contenedorTrabajemos .caja1 {
+
+.caja1 {
   grid-column: 1/3;
   grid-row: 1/6;
+  background-image: url(../imagenes/silabyn.jpg);
 }
-.contenedorTrabajemos .caja2 {
+.caja1 h1 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 80px;
+  margin-top: 20px;
+  margin-left: 80px;
+  letter-spacing: 2px;
+  color: #d7391b;
+}
+
+.caja2 {
   background-image: url(../imagenes/cartera.jpg);
   grid-column: 3/4;
   grid-row: 1/6;
 }
-.contenedorTrabajemos .caja3 {
+
+.caja3 {
   grid-column: 4/5;
   grid-row: 1/3;
 }
-.contenedorTrabajemos .caja4 {
+
+.caja4 {
   grid-column: 4/5;
   grid-row: 3/4;
 }
-.contenedorTrabajemos .caja5 {
+
+.caja5 {
   grid-column: 4/5;
   grid-row: 4/6;
 }
-.contenedorTrabajemos .caja5 p {
+.caja5 p {
   margin-top: 25px;
   margin-left: 15px;
 }
-.contenedorTrabajemos .caja6 {
+
+.caja6 {
   grid-column: 1/2;
   grid-row: 6/7;
 }
-.contenedorTrabajemos .caja7 {
+
+.caja7 {
   grid-column: 1/2;
   grid-row: 7/9;
 }
-.contenedorTrabajemos .caja7 p {
+.caja7 p {
   margin-top: 25px;
   margin-left: 15px;
 }
-.contenedorTrabajemos .caja8 {
+
+.caja8 {
   grid-column: 1/2;
   grid-row: 9/11;
 }
-.contenedorTrabajemos .caja9 {
+
+.caja9 {
   grid-column: 2/3;
   grid-row: 6/11;
   background-image: url(../imagenes/fashion1.jpg);
 }
-.contenedorTrabajemos .caja10 {
+
+.caja10 {
   grid-column: 3/4;
   grid-row: 6/7;
 }
-.contenedorTrabajemos .caja11 {
+
+.caja11 {
   grid-column: 3/4;
   grid-row: 7/9;
 }
-.contenedorTrabajemos .caja11 p {
+.caja11 p {
   margin-top: 25px;
   margin-left: 15px;
 }
-.contenedorTrabajemos .caja12 {
+
+.caja12 {
   grid-column: 3/4;
   grid-row: 9/11;
 }
-.contenedorTrabajemos .caja13 {
+
+.caja13 {
   grid-column: 4/5;
   grid-row: 6/11;
   background-image: url(../imagenes/fashion3.jpg);
 }
 
-@media (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .contenedorTrabajemos {
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(20, 100px);
+    width: 100%;
+  }
+  .contenedorTrabajemos .caja1 {
+    grid-column: 1/3;
+    grid-row: 1/6;
+  }
+  .contenedorTrabajemos .caja1 h1 {
+    font-family: "Alfa Slab One", cursive;
+    font-size: 40px;
+    margin-left: 10px;
+    color: #d7391b;
+  }
+  .contenedorTrabajemos .caja2 {
+    background-image: url(../imagenes/cartera.jpg);
+    grid-column: 1/2;
+    grid-row: 11/15;
+  }
+  .contenedorTrabajemos .caja3 {
+    grid-column: 2/3;
+    grid-row: 11/13;
+  }
+  .contenedorTrabajemos .caja4 {
+    grid-column: 2/3;
+    grid-row: 13/14;
+  }
+  .contenedorTrabajemos .caja5 {
+    grid-column: 2/3;
+    grid-row: 14/16;
+  }
+  .contenedorTrabajemos .caja10 {
+    grid-column: 1/2;
+    grid-row: 16/17;
+  }
+  .contenedorTrabajemos .caja11 {
+    grid-column: 1/2;
+    grid-row: 17/19;
+  }
+  .contenedorTrabajemos .caja12 {
+    grid-column: 1/2;
+    grid-row: 19/20;
+  }
+  .contenedorTrabajemos .caja13 {
+    grid-column: 2/3;
+    grid-row: 16/20;
+    background-image: url(../imagenes/fashion3.jpg);
+  }
+}
+@media only screen and (min-width: 602px) and (max-width: 768px) {
   .contenedorTrabajemos {
     grid-template-columns: repeat(2, 250px);
     grid-template-rows: repeat(20, 100px);
@@ -282,7 +333,19 @@ h3 {
     background-image: url(../imagenes/fashion3.jpg);
   }
 }
+/* TRABAJEMOS TERMINA */
 /* ULTIMO PROYECTO EMPIEZA */
+.tituloGrande2 {
+  margin-top: 10px;
+  color: #1a1c76;
+  font-weight: bold;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 100px;
+  letter-spacing: 30px;
+  position: absolute;
+  margin-left: 40px;
+}
+
 .carrusel {
   height: auto;
   margin-left: 300px;
@@ -396,15 +459,27 @@ footer .redes {
   box-sizing: border-box;
 }
 
+.tituloGrande {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  color: #d7391b;
+  font-weight: bold;
+  font-size: 90px;
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 70px;
+}
+
 .contenedorImagen1 {
   display: flex;
   justify-content: center;
-  height: 550px;
+  width: 100%;
+  height: auto;
   margin-bottom: 50px;
 }
 
 #imagen1 {
-  max-width: 100%;
+  width: 60%;
   height: auto;
 }
 
@@ -541,16 +616,27 @@ footer .redes {
   grid-row: 6/7;
 }
 
-@media (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .tituloGrande {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    letter-spacing: 10px;
+  }
+  .contenedorImagen1 {
+    height: auto;
+  }
   #imagen1 {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: auto;
-    margin: 0px;
+    margin-left: 0px;
   }
   .contenedorGaleria {
     height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(19, 200px);
+    grid-template-rows: repeat(22, 350px);
   }
   .item1 {
     background-image: url(../imagenes/vertical4.jpg);
@@ -648,12 +734,107 @@ footer .redes {
     background-position: top;
   }
 }
-@media only screen and (min-width: 481px) and (max-width: 806px) {
+@media only screen and (min-width: 602px) and (max-width: 768px) {
+  .tituloGrande {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    letter-spacing: 10px;
+  }
+  #imagen1 {
+    width: 80%;
+  }
   .contenedorGaleria {
     height: auto;
-    grid-template-columns: repeat(2, 500px);
+    width: 80%;
+    grid-template-columns: repeat(2, 400px);
     grid-template-rows: repeat(12, 350px);
-    margin-left: 200px;
+    margin-left: 20px;
+  }
+  .contenedorGaleria .item3 {
+    background-image: url(../imagenes/Scotty.JPG);
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .contenedorGaleria .item4 {
+    background-image: url(../imagenes/ciana.JPG);
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+  .contenedorGaleria .item6 {
+    background-image: url(../imagenes/viejo.jpg);
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .contenedorGaleria .item8 {
+    background-image: url(../imagenes/marte.jpg);
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+  .contenedorGaleria .item9 {
+    background-image: url(../imagenes/marian.JPG);
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  .contenedorGaleria .item11 {
+    background-image: url(../imagenes/vertical3.jpg);
+    grid-column: 2/3;
+    grid-row: 7/9;
+  }
+  .contenedorGaleria .item12 {
+    background-image: url(../imagenes/malenillas.JPG);
+    grid-column: 1/2;
+    grid-row: 8/9;
+  }
+  .contenedorGaleria .item13 {
+    background-image: url(../imagenes/manu.JPG);
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+  .contenedorGaleria .item14 {
+    background-image: url(../imagenes/caroylu.JPG);
+    grid-column: 2/3;
+    grid-row: 9/10;
+  }
+  .contenedorGaleria .item15 {
+    background-image: url(../imagenes/lolla.JPG);
+    background-size: 400px;
+    background-position: bottom;
+    grid-column: 1/2;
+    grid-row: 10/11;
+  }
+  .contenedorGaleria .item16 {
+    background-image: url(../imagenes/playa.JPG);
+    grid-column: 2/3;
+    grid-row: 10/11;
+    background-image: 200px;
+    background-position: bottom;
+  }
+  .contenedorGaleria .item17 {
+    background-image: url(../imagenes/beso.jpg);
+    grid-column: 1/2;
+    grid-row: 11/12;
+  }
+  .contenedorGaleria .item18 {
+    background-image: url(../imagenes/rafa.jpg);
+    grid-column: 2/3;
+    grid-row: 11/12;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .tituloGrande {
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    letter-spacing: 15px;
+  }
+  #imagen1 {
+    width: 80%;
+  }
+  .contenedorGaleria {
+    height: auto;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(12, 350px);
   }
   .contenedorGaleria .item3 {
     background-image: url(../imagenes/Scotty.JPG);
@@ -727,15 +908,7 @@ footer .redes {
 }
 /* GALERIA DE IMAGENES TERMINA  */
 /* RESPONSIVE */
-@media (max-width: 480px) {
-  .tituloGrande {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    letter-spacing: 15px;
-    width: 100%;
-    margin-left: 0;
-  }
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   .contenedor-imagenPrincipal {
     height: auto;
   }
@@ -747,7 +920,7 @@ footer .redes {
     margin-left: 0px;
   }
 }
-@media only screen and (min-width: 481px) and (max-width: 806px) {
+@media only screen and (min-width: 602px) and (max-width: 768px) {
   .contenedor-imagenPrincipal {
     height: auto;
   }
@@ -758,11 +931,8 @@ footer .redes {
     height: auto;
     margin-left: 0px;
   }
-  .tituloGrande {
-    margin-left: 160px;
-  }
 }
-@media only screen and (min-width: 481px) and (max-width: 806px) and (min-width: 807px) and (max-width: 1305px) {
+@media only screen and (min-width: 602px) and (max-width: 768px) and (min-width: 601px) and (max-width: 1024px) {
   .contenedor-imagenPrincipal {
     height: auto;
   }

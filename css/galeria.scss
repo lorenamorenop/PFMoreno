@@ -8,20 +8,29 @@ $ancho-cuenta: 50vw;
 $titulo-font: "Alfa Slab One", cursive;
 $azul: #1a1c76;
 $azulClaro: #615ebb;
+$rojo: #d7391b;
+.tituloGrande {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    color:$rojo;
+    font-weight: bold;
+    font-size: 90px;
+    font-family: $titulo-font;
+    letter-spacing: 70px;
+}
 
 .contenedorImagen1{
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 700px;
+    width: 100%;
     height: auto;
     margin-bottom: 50px;
 }
-#imagen1 {
-    width: 100%;
-    margin: 0 auto;
+#imagen1{
+    width:60%;
+    height: auto;
 }
-
 
 .contenedorGaleria {
     display: grid;
@@ -153,7 +162,13 @@ $azulClaro: #615ebb;
 }
 
 
-@media (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+    .tituloGrande {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        letter-spacing: 10px;
+    }
     .contenedorImagen1{
         height: auto;
     }
@@ -167,7 +182,7 @@ $azulClaro: #615ebb;
     .contenedorGaleria {
         height: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(19, 200px);
+        grid-template-rows: repeat(22, 350px);
     }
     .item1 {
         background-image: url(../imagenes/vertical4.jpg);
@@ -265,13 +280,122 @@ $azulClaro: #615ebb;
         background-position: top;
     }
 }
+@media only screen and (min-width: 602px) and (max-width: 768px){
+    .tituloGrande {
+        display: flex;
+        justify-content: center;
+        font-size: 70px;
+        letter-spacing: 10px;
+    }
+    #imagen1 {
+        width: 80%;
+    }
 
-@media only screen and (min-width: 481px) and (max-width: 806px){
     .contenedorGaleria {
         height: auto;
-        grid-template-columns: repeat( 2, 500px);
+        width: 80%;
+        grid-template-columns: repeat( 2, 400px);
         grid-template-rows: repeat(12, 350px);
-        margin-left: 200px;
+        margin-left: 20px;
+        
+        .item3 {
+            background-image: url(../imagenes/Scotty.JPG);
+            grid-column: 1/2;
+            grid-row: 5/6;
+        }
+        
+        .item4 {
+            background-image: url(../imagenes/ciana.JPG);
+            grid-column: 2/3;
+            grid-row: 5/6;
+        }
+        
+        .item6 {
+            background-image: url(../imagenes/viejo.jpg);
+            grid-column: 1/2;
+            grid-row: 6/7;
+        }
+        
+        .item8 {
+            background-image: url(../imagenes/marte.jpg);
+            grid-column: 2/3;
+            grid-row: 6/7;
+        }
+        
+        .item9 {
+            background-image: url(../imagenes/marian.JPG);
+            grid-column: 1/2;
+            grid-row: 7/8;
+        }
+        
+        
+        .item11 {
+            background-image: url(../imagenes/vertical3.jpg);
+            grid-column: 2/3;
+            grid-row: 7/9;
+        }
+        
+        .item12 {
+            background-image: url(../imagenes/malenillas.JPG);
+            grid-column: 1/2;
+            grid-row: 8/9;
+        }
+        
+        .item13 {
+            background-image: url(../imagenes/manu.JPG);
+            grid-column: 1/2;
+            grid-row: 9/10;
+        }
+        
+        .item14 {
+            background-image: url(../imagenes/caroylu.JPG);
+            grid-column: 2/3;
+            grid-row: 9/10;
+        }
+        .item15 {
+            background-image: url(../imagenes/lolla.JPG);
+            background-size: 400px;
+            background-position: bottom;
+            grid-column: 1/2;
+            grid-row: 10/11;
+        }
+        
+        .item16 {
+            background-image: url(../imagenes/playa.JPG);
+            grid-column: 2/3;
+            grid-row: 10/11;
+            background-image: 200px;
+            background-position: bottom;
+        }
+        
+        .item17 {
+            background-image: url(../imagenes/beso.jpg);
+            grid-column: 1/2;
+            grid-row: 11/12;
+        }
+        
+        .item18 {
+            background-image: url(../imagenes/rafa.jpg);
+            grid-column: 2/3;
+            grid-row: 11/12;
+        }
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+    .tituloGrande {
+        display: flex;
+        justify-content: center;
+        font-size: 80px;
+        letter-spacing: 15px;
+    }
+    #imagen1 {
+        width: 80%;
+    }
+
+    .contenedorGaleria {
+        height: auto;
+        grid-template-columns: repeat( 2, 400px);
+        grid-template-rows: repeat(12, 350px);
     
         
         .item3 {
@@ -356,4 +480,5 @@ $azulClaro: #615ebb;
             grid-row: 11/12;
         }
     }
+    
 }
