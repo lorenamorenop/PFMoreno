@@ -150,7 +150,7 @@ h3 {
 .caja1 {
   grid-column: 1/3;
   grid-row: 1/6;
-  background-image: url(../imagenes/silabyn.jpg);
+  background-image: url(../imagenes/contenido2.jpg);
 }
 .caja1 h1 {
   font-family: "Alfa Slab One", cursive;
@@ -238,19 +238,65 @@ h3 {
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
   .contenedorTrabajemos {
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 20px);
     grid-template-rows: repeat(20, 100px);
     width: 100%;
   }
-  .contenedorTrabajemos .caja1 {
+  .caja1 {
     grid-column: 1/3;
     grid-row: 1/6;
   }
-  .contenedorTrabajemos .caja1 h1 {
+  .caja1 h1 {
     font-family: "Alfa Slab One", cursive;
     font-size: 40px;
     margin-left: 10px;
     color: #d7391b;
+  }
+  .caja2 {
+    background-image: url(../imagenes/cartera.jpg);
+    grid-column: 1/2;
+    grid-row: 11/15;
+  }
+  .caja3 {
+    grid-column: 2/3;
+    grid-row: 11/13;
+  }
+  .caja4 {
+    grid-column: 2/3;
+    grid-row: 13/14;
+  }
+  .caja5 {
+    grid-column: 2/3;
+    grid-row: 14/16;
+  }
+  .caja10 {
+    grid-column: 1/2;
+    grid-row: 16/17;
+  }
+  .caja11 {
+    grid-column: 1/2;
+    grid-row: 17/19;
+  }
+  .caja12 {
+    grid-column: 1/2;
+    grid-row: 19/20;
+  }
+  .caja13 {
+    grid-column: 2/3;
+    grid-row: 16/20;
+    background-image: url(../imagenes/fashion3.jpg);
+  }
+}
+@media only screen and (min-width: 602px) and (max-width: 768px) {
+  .contenedorTrabajemos {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(20, 100px);
+    width: 100%;
+    margin-left: 50px;
+  }
+  .contenedorTrabajemos .caja1 {
+    grid-column: 1/3;
+    grid-row: 1/6;
   }
   .contenedorTrabajemos .caja2 {
     background-image: url(../imagenes/cartera.jpg);
@@ -287,7 +333,7 @@ h3 {
     background-image: url(../imagenes/fashion3.jpg);
   }
 }
-@media only screen and (min-width: 602px) and (max-width: 768px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .contenedorTrabajemos {
     grid-template-columns: repeat(2, 250px);
     grid-template-rows: repeat(20, 100px);
@@ -821,7 +867,7 @@ footer .redes {
     grid-row: 11/12;
   }
 }
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .tituloGrande {
     display: flex;
     justify-content: center;
@@ -919,8 +965,19 @@ footer .redes {
     height: auto;
     margin-left: 0px;
   }
+  .tituloGrande2 {
+    width: 100%;
+    font-size: 50px;
+    letter-spacing: 7px;
+    margin-left: 0;
+  }
+  .carrusel {
+    width: 100% !important;
+    height: 300px !important;
+    margin-left: 0;
+  }
 }
-@media only screen and (min-width: 602px) and (max-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 768px) {
   .contenedor-imagenPrincipal {
     height: auto;
   }
@@ -931,9 +988,32 @@ footer .redes {
     height: auto;
     margin-left: 0px;
   }
+  .carrusel {
+    display: flex;
+    justify-content: center !important;
+    height: 250px !important;
+  }
+  .tituloGrande2 {
+    width: 100%;
+    font-size: 70px;
+    letter-spacing: 15px;
+    margin-left: 0;
+  }
 }
-@media only screen and (min-width: 602px) and (max-width: 768px) and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 768px) and (min-width: 769px) and (max-width: 1024px) {
   .contenedor-imagenPrincipal {
     height: auto;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .main-carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-carrusel .carrusel {
+    width: 100% !important;
+    height: auto !important;
+    margin-left: 0;
   }
 }/*# sourceMappingURL=estilos.css.map */
