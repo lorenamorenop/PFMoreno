@@ -25,7 +25,7 @@ $rojo: #d7391b;
 .caja1 {
     grid-column: 1/3;
     grid-row: 1/6;
-    background-image: url(../imagenes/contenido2.jpg);
+    background-image: url(../imagenes/silabyn.jpg);
     h1{
     font-family: $titulo-font;
     font-size: 80px;
@@ -104,21 +104,15 @@ $rojo: #d7391b;
 @media only screen and (min-width: 320px) and (max-width: 600px){
 
     .contenedorTrabajemos {
-        grid-template-columns: repeat(2, 20px);
+        grid-template-columns: repeat(2, 250px);
         grid-template-rows: repeat(20, 100px);
         width: 100%;
-    }
-
+        margin-left: 50px;
 
         .caja1 {
             grid-column: 1/3;
             grid-row: 1/6;
-            h1{
-                font-family: $titulo-font;
-                font-size: 40px;
-                margin-left: 10px;
-                color: $rojo;
-            }
+    
         }
         .caja2 {
             background-image: url(../imagenes/cartera.jpg);
@@ -154,6 +148,7 @@ $rojo: #d7391b;
             grid-row: 16/20;
             background-image: url(../imagenes/fashion3.jpg);
         }
+}
 }
 
 @media only screen and (min-width: 602px) and (max-width: 768px){

@@ -22,12 +22,14 @@ $rojo: #d7391b;
 header .navbar{
     background-color: white !important;
 }
+
 .nav-item{
     a {
         text-decoration: none;
         color: black;
         position: relative;
 }
+
 ::after {
     content: "";
     width: 0;
@@ -50,7 +52,6 @@ a:hover::after {
     justify-content: end;
     color: black;
 }
-
 body {
     background-color: white;
 }
@@ -143,8 +144,6 @@ h3 {
 
 /* TRABAJEMOS TERMINA */
 
-
-
 /* ULTIMO PROYECTO EMPIEZA */
 .tituloGrande2 {
     margin-top: 10px;
@@ -170,7 +169,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(4, 200px);
     grid-template-rows: repeat(2, 200px);
-    margin-left: ($ancho-cuenta / 2.5);
+    margin-left: calc($ancho-cuenta / 2.5);
     margin-top: 70px;
     column-gap: 30px;
     row-gap: 30px;
@@ -258,7 +257,10 @@ footer {
 
 /* RESPONSIVE */
 @media only screen and (min-width: 320px) and (max-width: 600px) {
-
+    .tituloSaludo{
+        margin-left: 0px;
+        font-size: 50px;
+    }
 .contenedor-imagenPrincipal {
     height: auto;
     img {
@@ -282,7 +284,6 @@ footer {
 }
 }
 @media only screen and (min-width: 601px) and (max-width: 768px){
-
     .contenedor-imagenPrincipal {
     height: auto;
     img {
@@ -311,13 +312,14 @@ footer {
 }
 }
 .main-carrusel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     .carrusel {
     width: 100% !important;
     height: auto !important;
-    margin-left: 0;
+    margin-left: 0;    
+    display: flex !important; 
+    justify-content: center !important;
+    align-items: center !important;
 }
 }
 
