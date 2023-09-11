@@ -19,43 +19,10 @@ $rojo: #d7391b;
     box-sizing: border-box;
 }
 
-header .navbar{
-    background-color: white !important;
-}
-
-.nav-item{
-    a {
-        text-decoration: none;
-        color: black;
-        position: relative;
-}
-
-::after {
-    content: "";
-    width: 0;
-    height: 2px;
-    background-color: $azulClaro ;
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    transition: all 0.5s;
-    will-change: width;
-}
-a:hover::after {
-    width: 100%;
-    right: 0;
-}
-}
-
-.navbar-collapse {
-    display: flex;
-    justify-content: end;
-    color: black;
-}
+/* ESTILOS GENERALES */
 body {
     background-color: white;
 }
-
 h1 {
     font-family: "Roboto", sans-serif;
     font-size: 23px;
@@ -79,7 +46,39 @@ h3 {
     margin-top: 30px;
     text-align: center;
 }
-
+/* FIN ESTILOS GENERALES */
+/* INICIO NAVBAR */
+header .navbar{
+    background-color: white !important;
+}
+.nav-item{
+    a {
+        text-decoration: none;
+        color: black;
+        position: relative;
+}
+::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: $azulClaro ;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+}
+a:hover::after {
+    width: 100%;
+    right: 0;
+}
+}
+.navbar-collapse {
+    display: flex;
+    justify-content: end;
+    color: black;
+}
+/* FIN NAVBAR */
 /* INDEX COMIENZA */
 .nombre {
     border: solid 1px black;
@@ -136,125 +135,6 @@ h3 {
     margin-top: 50px;
     margin-left: 20px;
 }
-/* INDEX TERMINA */
-
-/* TRABAJEMOS COMIENZA */
-
-@import "trabajemos.scss";
-
-/* TRABAJEMOS TERMINA */
-
-/* ULTIMO PROYECTO EMPIEZA */
-.tituloGrande2 {
-    margin-top: 10px;
-    color: $azul;
-    font-weight: bold;
-    font-family: $titulo-font;
-    font-size: 100px;
-    letter-spacing: 30px;
-    position: absolute;
-    margin-left: 40px;
-}
-.carrusel {
-    height: auto;
-    margin-left: 300px;
-    margin-top: 80px;
-    width: 800px;
-    box-shadow: 2px 2px 15px #2b2a4c;
-}
-/* ULTIMO PROYECTO TERMINA */
-
-/* CONTACTO EMPIEZA */
-.contenedorContacto {
-    display: grid;
-    grid-template-columns: repeat(4, 200px);
-    grid-template-rows: repeat(2, 200px);
-    margin-left: calc($ancho-cuenta / 2.5);
-    margin-top: 70px;
-    column-gap: 30px;
-    row-gap: 30px;
-}
-.box {
-    background-position: center;
-    background-size: cover;
-    position: relative; 
-    overflow: hidden;
-}
-.box1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    background-image: url(../imagenes/byn.jpg);
-}
-.box2 {
-    grid-column: 2/4;
-    grid-row: 1/3;
-    background-image: url(../imagenes/byn2.jpg);
-    h1 {
-    font-family: $titulo-font;
-    font-size: 80px;
-    overflow: hidden;
-    margin-top: 90px;
-    margin-left: 10px;
-    letter-spacing: -5px;
-    color: white;
-    }
-}
-.box3 {
-    grid-column: 4/5;
-    grid-row: 1/2;
-}
-.box4 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    background-image: url(../imagenes/byn.jpg);
-}
-.box5 {
-    grid-column: 4/5;
-    grid-row: 2/3;
-    background-image: url(../imagenes/qr.jpeg);
-}
-.box6 {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $azul;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-}
-.box6:hover {
-    opacity: 0;
-}
-
-/* CONTACTO TERMINA */
-/*  FOOTER */
-footer {
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0.737);
-    .redes {
-        margin-left: 50px;
-        font-size: 20px;
-        flex-direction: row;
-        letter-spacing: 15px;
-}
-}
-
-#pContacto {
-    color: white;
-    margin-left: 50px;
-    margin-top: 150px;
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 100;
-}
-/*  FOOTER */
-/* GALERIA DE IMAGENES EMPIEZA  */
-@import "galeria.scss";
-/* GALERIA DE IMAGENES TERMINA  */
-
 /* RESPONSIVE */
 @media only screen and (min-width: 320px) and (max-width: 600px) {
     .tituloSaludo{
@@ -271,17 +151,6 @@ footer {
         margin-left: 0px;
     }
 }    
-.tituloGrande2 {
-    width: 100%;
-    font-size: 50px;
-    letter-spacing: 7px;
-    margin-left: 0;
-}
-.carrusel {
-    width: 100% !important;
-    height: 300px!important;
-    margin-left: 0;
-}
 }
 @media only screen and (min-width: 601px) and (max-width: 768px){
     .contenedor-imagenPrincipal {
@@ -294,33 +163,122 @@ footer {
         margin-left: 0px;
 }
 }
-.carrusel {
-    display: flex;
-    justify-content: center !important;
-    height: 250px!important;
-}
-.tituloGrande2 {
-    width: 100%;
-    font-size: 70px;
-    letter-spacing: 15px;
-    margin-left: 0;
-}
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 .contenedor-imagenPrincipal {
     height: auto;
 }
 }
-.main-carrusel{
+}
+/* INDEX TERMINA */
 
+/* TRABAJEMOS COMIENZA */
+
+@import "trabajemos.scss";
+
+/* TRABAJEMOS TERMINA */
+
+/* ULTIMO PROYECTO EMPIEZA */
+.container-enfoque {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        margin-bottom: 160px;
+        margin-top: 40px;
+    }
+    .tituloGrande2 {
+        color: #1a1c76;
+        font-weight: bold;
+        font-family: "Alfa Slab One", cursive;
+    }
     .carrusel {
-    width: 100% !important;
-    height: auto !important;
-    margin-left: 0;    
-    display: flex !important; 
-    justify-content: center !important;
-    align-items: center !important;
+        width: 70% !important;
+        margin: 0 auto !important;
+        position: absolute;
+        max-width: 70%;
+        z-index: 2 !important;
+        box-shadow: 2px 2px 15px #2b2a4c;
+    }
+    @media only screen and (max-width: 480px) {
+    .tituloGrande2 {
+        letter-spacing: 20px;
+        font-size: 50px;
 }
-}
+    .carrusel{
+        margin-top: 40px !important;
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
 
 }
+    @media only screen and (min-width: 768px) {
+    .tituloGrande2 {
+        font-size: 90px;
+}
+    .carrusel {
+        width: 70% !important;
+        margin-top: 40px !important;
+}
+}
+    @media only screen and (min-width: 1200px) { 
+    .container-enfoque {
+        display: flex;
+        justify-content: left;
+        text-align: center;
+        margin-bottom: 160px;
+        margin-top: 40px;
+        }
+    .tituloGrande2 {
+        margin-top: 10px;
+        font-size: 150px;
+        letter-spacing: 30px;
+        margin-left: 40px;
+}
+    .carrusel {
+        width:850px !important;
+        margin-top: 90px !important;
+        margin-left: 420px !important;
+        box-shadow: 2px 2px 15px #2b2a4c;
+    }
+}
+/* ULTIMO PROYECTO TERMINA */
+
+/* CONTACTO EMPIEZA */
+@import "contacto.scss";
+/* CONTACTO TERMINA */
+
+/* Inicio FOOTER */
+footer {
+    padding: 30px;
+    letter-spacing: 5px;
+    background-color: white;
+    text-align: start;
+    
+    .icono {
+    color: black;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 20px;
+    flex-direction: row;
+    
+}
+    p{ 
+        display: flex;
+        justify-content: start;
+        color: black;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 100px;
+    }
+}
+
+
+  /*  FOOTER TERMINA */
+
+/* GALERIA DE IMAGENES EMPIEZA  */
+@import "galeria.scss";
+/* GALERIA DE IMAGENES TERMINA  */

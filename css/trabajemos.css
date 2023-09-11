@@ -106,48 +106,63 @@
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
   .contenedorTrabajemos {
-    grid-template-columns: repeat(2, 250px);
-    grid-template-rows: repeat(20, 100px);
+    grid-template-columns: repeat(2, 160px);
+    grid-template-rows: repeat(10, 160px);
     width: 100%;
-    margin-left: 50px;
   }
   .contenedorTrabajemos .caja1 {
     grid-column: 1/3;
-    grid-row: 1/6;
+    grid-row: 1/2;
+  }
+  .contenedorTrabajemos .caja1 h1 {
+    font-family: "Alfa Slab One", cursive;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
   }
   .contenedorTrabajemos .caja2 {
-    background-image: url(../imagenes/cartera.jpg);
     grid-column: 1/2;
-    grid-row: 11/15;
-  }
-  .contenedorTrabajemos .caja3 {
-    grid-column: 2/3;
-    grid-row: 11/13;
+    grid-row: 2/4;
   }
   .contenedorTrabajemos .caja4 {
     grid-column: 2/3;
-    grid-row: 13/14;
+    grid-row: 2/3;
   }
   .contenedorTrabajemos .caja5 {
     grid-column: 2/3;
-    grid-row: 14/16;
+    grid-row: 3/4;
+  }
+  .contenedorTrabajemos .caja6 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .contenedorTrabajemos .caja7 {
+    grid-column: 1/2;
+    grid-row: 5/7;
+  }
+  .contenedorTrabajemos .caja9 {
+    grid-column: 2/3;
+    grid-row: 4/6;
+  }
+  .contenedorTrabajemos .caja13 {
+    grid-column: 1/2;
+    grid-row: 7/9;
   }
   .contenedorTrabajemos .caja10 {
-    grid-column: 1/2;
-    grid-row: 16/17;
+    grid-column: 2/3;
+    grid-row: 6/7;
   }
   .contenedorTrabajemos .caja11 {
-    grid-column: 1/2;
-    grid-row: 17/19;
+    grid-column: 2/3;
+    grid-row: 7/8;
   }
   .contenedorTrabajemos .caja12 {
     grid-column: 1/2;
-    grid-row: 19/20;
+    grid-row: 9/19;
   }
   .contenedorTrabajemos .caja13 {
     grid-column: 2/3;
-    grid-row: 16/20;
-    background-image: url(../imagenes/fashion3.jpg);
+    grid-row: 8/9;
   }
 }
 @media only screen and (min-width: 602px) and (max-width: 768px) {
