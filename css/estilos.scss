@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:wght@900&family=IBM+Plex+Sans&family=Montserrat:wght@100;600;900&family=Roboto:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:wght@900&family=IBM+Plex+Sans&family=Inclusive+Sans&family=Montserrat:wght@100;600;900&family=Roboto+Slab:wght@600&display=swap');
+
 /*font-family: 'Alfa Slab One', cursive;
 font-family: 'Barlow', sans-serif;
 font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Inclusive Sans', sans-serif;
 font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
 */
 
 $alto-cuenta: 50vh;
@@ -54,8 +56,15 @@ h3 {
 /* INICIO NAVBAR */
 header .navbar{
     background-color: white !important;
+    margin-top: 10px;
 }
 .nav-item{
+    border-top: solid 1px black !important;
+    border-bottom: solid 1px black !important;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     a {
         text-decoration: none;
         color: black;
@@ -79,66 +88,72 @@ a:hover::after {
 }
 .navbar-collapse {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     color: black;
 }
 /* FIN NAVBAR */
 /* INDEX COMIENZA */
 .nombre {
     border: solid 1px black;
-    padding: 25px;
+    padding: 10px;
     display: inline-block;
-    font-size: 30px;
+    font-size: 2px;
     font-family: Arial;
-    width: 120px;
-    height: 110px;
-    margin-left: 35px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
+    width: 100px;
+    height: 90px;
+    margin-left: 15px;
+    margin-top: 10px;
 
-.contenedor-imagenPrincipal {
-    display: flex;
-    justify-content: center;
-    height: 550px;
-    margin-top: 50px;
-    img {
-        max-width: 100%;
-        height: auto;
-        opacity: 0;
-        animation: aparecer 3s;
-        animation-fill-mode: forwards;
 }
-}
-@keyframes aparecer {
-    from {
-    opacity: 0;
-}
-
-    to {
-    opacity: 1;
-}
-}
-
 #spanNombre {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 25px;
 }
+.tituloSaludo {
+    background-image: url(../imagenes/fondo2.jpg);
+    display: flex;
+    justify-content: flex-start;
+    font-size: 100px;
+    font-family: $titulo-font;
+    margin-top: 50px;
+    margin-left: 20px;
+    color: white;
+}
+.contenedor-polas{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: 700px; 
+    justify-content: center;
+    column-gap: 50px;
+
+    .pola{
+        background-position: center;
+        background-size: cover;
+        position: relative; 
+        overflow: hidden;
+        margin-top: 40px;
+    }
+    .pola1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-image: url(../imagenes/pola1.jpg);
+    }
+    .pola2{  
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-image: url(../imagenes/pola2.jpg);
+    }
+}
+
 .parrafo-index {
     font-weight: 100;
     font-size: 20px;
     color: black;
-    margin-top: 30px;
     text-align: center;
+    margin-top: 30px;
 }
-.tituloSaludo {
-    font-size: 60px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    margin-top: 50px;
-    margin-left: 20px;
-}
+
 /* RESPONSIVE */
 @media only screen and (min-width: 320px) and (max-width: 600px) {
     .tituloSaludo{
@@ -275,11 +290,10 @@ footer {
         justify-content: start;
         color: black;
         font-size: 18px;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Inclusive Sans', sans-serif;
         margin-top: 100px;
     }
 }
-
 
   /*  FOOTER TERMINA */
 
