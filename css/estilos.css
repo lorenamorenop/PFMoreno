@@ -157,37 +157,13 @@ header .navbar {
 }
 
 /* RESPONSIVE */
-@media only screen and (min-width: 320px) and (max-width: 600px) {
+@media only screen and (min-width: 480px) {
+  .contenedor-polas {
+    grid-template-columns: 500px;
+  }
   .tituloSaludo {
     margin-left: 0px;
     font-size: 50px;
-  }
-  .contenedor-imagenPrincipal {
-    height: auto;
-  }
-  .contenedor-imagenPrincipal img {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-  .contenedor-imagenPrincipal {
-    height: auto;
-  }
-  .contenedor-imagenPrincipal img {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 768px) and (min-width: 769px) and (max-width: 1024px) {
-  .contenedor-imagenPrincipal {
-    height: auto;
   }
 }
 /* INDEX TERMINA */
