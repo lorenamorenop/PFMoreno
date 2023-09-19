@@ -110,6 +110,7 @@ a:hover::after {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
 }
+
 .tituloSaludo {
     background-image: url(../imagenes/fondo2.jpg);
     display: flex;
@@ -120,6 +121,8 @@ a:hover::after {
     margin-left: 20px;
     color: white;
 }
+
+
 .contenedor-polas{
     display: grid;
     grid-template-columns: repeat(2, 500px);
@@ -128,7 +131,7 @@ a:hover::after {
     column-gap: 50px;
 
     .pola{
-        background-position: center;
+        object-fit: cover;
         background-size: cover;
         position: relative; 
         overflow: hidden;
@@ -145,20 +148,24 @@ a:hover::after {
         background-image: url(../imagenes/pola2.jpg);
     }
 }
+.contenedor-parrafo-index{
+    border: solid 1px black;
+    margin-top: 30px;
 
 .parrafo-index {
     font-weight: 100;
-    font-size: 20px;
+    font-size: 22px;
     color: black;
     text-align: center;
-    margin-top: 30px;
+}
 }
 
+
 /* RESPONSIVE */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     .contenedor-polas{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 700px);
+        grid-template-rows: repeat(2, 600px);
         .pola2{  
             grid-column: 1/2;
             grid-row: 2/3;
@@ -170,9 +177,14 @@ a:hover::after {
         margin-left: 0px;
         font-size: 50px;
     }
-
 }    
-
+@media only screen and (min-width: 768px) and (max-width: 1050px ){
+    .contenedor-polas{
+        grid-template-columns: repeat(2, 450px);
+        grid-template-rows: 600px; 
+        column-gap: 30px;
+}
+}
 /* INDEX TERMINA */
 
 /* TRABAJEMOS COMIENZA */
@@ -260,15 +272,19 @@ footer {
     letter-spacing: 5px;
     background-color: white;
     text-align: start;
-    
+
     .icono {
     color: black;
     text-decoration: none;
     margin-left: 25px;
-    font-size: 20px;
+    font-size: 25px;
     flex-direction: row;
-    
+    transition: transform 0.3s;
 }
+    .icono:hover{
+        color: $azul;
+    }
+
     p{ 
         display: flex;
         justify-content: start;
@@ -277,7 +293,10 @@ footer {
         font-family: 'Inclusive Sans', sans-serif;
         margin-top: 100px;
     }
-}
+}  
+
+
+
 
   /*  FOOTER TERMINA */
 

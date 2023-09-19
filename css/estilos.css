@@ -131,7 +131,8 @@ header .navbar {
        column-gap: 50px;
 }
 .contenedor-polas .pola {
-  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -148,19 +149,22 @@ header .navbar {
   background-image: url(../imagenes/pola2.jpg);
 }
 
-.parrafo-index {
+.contenedor-parrafo-index {
+  border: solid 1px black;
+  margin-top: 30px;
+}
+.contenedor-parrafo-index .parrafo-index {
   font-weight: 100;
-  font-size: 20px;
+  font-size: 22px;
   color: black;
   text-align: center;
-  margin-top: 30px;
 }
 
 /* RESPONSIVE */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .contenedor-polas {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 700px);
+    grid-template-rows: repeat(2, 600px);
   }
   .contenedor-polas .pola2 {
     grid-column: 1/2;
@@ -170,6 +174,14 @@ header .navbar {
   .tituloSaludo {
     margin-left: 0px;
     font-size: 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1050px) {
+  .contenedor-polas {
+    grid-template-columns: repeat(2, 450px);
+    grid-template-rows: 600px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
   }
 }
 /* INDEX TERMINA */
@@ -256,6 +268,7 @@ header .navbar {
   grid-column: 2/3;
   grid-row: 6/11;
   background-image: url(../imagenes/fashion1.jpg);
+  background-size: cover;
 }
 
 .caja10 {
@@ -344,7 +357,7 @@ header .navbar {
     grid-row: 14/16;
   }
 }
-@media only screen and (min-width: 602px) and (max-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 768px) {
   .contenedorTrabajemos {
     grid-template-columns: repeat(2, 250px);
     grid-template-rows: repeat(20, 100px);
@@ -508,17 +521,13 @@ header .navbar {
 }
 /* ULTIMO PROYECTO TERMINA */
 /* CONTACTO EMPIEZA */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .contenedor-imagenPrincipal {
   display: flex;
   justify-content: center;
-  height: 550px;
+  height: 600px;
   margin-top: 40px;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
 }
 .contenedor-imagenPrincipal img {
   max-width: 100%;
@@ -536,7 +545,7 @@ header .navbar {
     opacity: 1;
   }
 }
-.contenedorContacto {
+.contenedor-contacto {
   display: grid;
   grid-template-columns: repeat(4, 200px);
   grid-template-rows: repeat(2, 200px);
@@ -545,24 +554,27 @@ header .navbar {
   -moz-column-gap: 30px;
        column-gap: 30px;
   row-gap: 30px;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
 }
-.contenedorContacto .box {
+.contenedor-contacto .box {
+  max-width: 100%;
   background-position: center;
   background-size: cover;
   position: relative;
   overflow: hidden;
 }
-.contenedorContacto .box1 {
+.contenedor-contacto .box1 {
   grid-column: 1/2;
   grid-row: 1/2;
-  background-image: url(../imagenes/byn.jpg);
+  border-right: solid black 1px;
 }
-.contenedorContacto .box2 {
+.contenedor-contacto .box2 {
   grid-column: 2/4;
   grid-row: 1/3;
-  background-image: url(../imagenes/byn2.jpg);
+  background-image: url(../imagenes/zapatos.jpg);
 }
-.contenedorContacto .box2 h1 {
+.contenedor-contacto .box2 h1 {
   font-family: "Alfa Slab One", cursive;
   font-size: 80px;
   overflow: hidden;
@@ -571,63 +583,56 @@ header .navbar {
   letter-spacing: -5px;
   color: white;
 }
-.contenedorContacto .box3 {
+.contenedor-contacto .box3 {
   grid-column: 4/5;
   grid-row: 1/2;
   background-image: url(../imagenes/jean2.jpg);
 }
-.contenedorContacto .box3 P {
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
-  font-family: "Alfa Slab One", cursive;
-  font-weight: bold;
-  font-weight: 100;
-  margin-top: 30px;
-  color: white;
-}
-.contenedorContacto .box4 {
+.contenedor-contacto .box4 {
   grid-column: 1/2;
   grid-row: 2/3;
-  background-image: url(../imagenes/byn.jpg);
+  border-right: solid black 1px;
 }
-.contenedorContacto .box5 {
+.contenedor-contacto .box5 {
   grid-column: 4/5;
   grid-row: 2/3;
-  background-image: url(../imagenes/qr.jpeg);
+  background-image: url(../imagenes/qr.png);
+  background-color: #ada49a;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 768px) {
-  .contenedorContacto {
+  .contenedor-contacto {
     grid-template-columns: repeat(2, 140px);
     grid-template-rows: repeat(5, 140px);
     height: auto;
     -moz-column-gap: 1.5px;
          column-gap: 1.5px;
   }
-  .contenedorContacto .box1 {
+  .contenedor-contacto .box1 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-  .contenedorContacto .box2 {
+  .contenedor-contacto .box2 {
     grid-column: 1/3;
     grid-row: 1/3;
   }
-  .contenedorContacto .box3 {
+  .contenedor-contacto .box3 {
     grid-column: 2/3;
     grid-row: 4/5;
   }
-  .contenedorContacto .box4 {
+  .contenedor-contacto .box4 {
     grid-column: 2/3;
     grid-row: 3/4;
   }
-  .contenedorContacto .box5 {
+  .contenedor-contacto .box5 {
     grid-column: 1/2;
     grid-row: 4/5;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  .contenedorContacto {
+  .contenedor-contacto {
     display: grid;
     grid-template-columns: repeat(4, 200px);
     grid-template-rows: repeat(2, 200px);
@@ -638,6 +643,22 @@ header .navbar {
     row-gap: 30px;
   }
 }
+.contenedor-mapa {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+}
+.contenedor-mapa iframe {
+  width: 60%;
+  height: 300px;
+  filter: invert(90%);
+}
+
 /* CONTACTO TERMINA */
 /* Inicio FOOTER */
 footer {
@@ -650,8 +671,12 @@ footer .icono {
   color: black;
   text-decoration: none;
   margin-left: 25px;
-  font-size: 20px;
+  font-size: 25px;
   flex-direction: row;
+  transition: transform 0.3s;
+}
+footer .icono:hover {
+  color: #1a1c76;
 }
 footer p {
   display: flex;

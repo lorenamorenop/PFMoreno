@@ -82,6 +82,7 @@ $rojo: #d7391b;
     grid-column: 2/3;
     grid-row: 6/11;
     background-image: url(../imagenes/fashion1.jpg);
+    background-size: cover;
 }
 .caja10 {
     grid-column: 3/4;
@@ -170,7 +171,7 @@ $rojo: #d7391b;
 
 }
 
-@media only screen and (min-width: 602px) and (max-width: 768px){
+@media only screen and (min-width: 601px) and (max-width: 768px){
     .contenedorTrabajemos {
         grid-template-columns: repeat(2, 250px);
         grid-template-rows: repeat(20, 100px);
