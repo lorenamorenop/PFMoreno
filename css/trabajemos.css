@@ -79,7 +79,7 @@
 .caja9 {
   grid-column: 2/3;
   grid-row: 6/11;
-  background-image: url(../imagenes/fashion1.jpg);
+  background-image: url(../imagenes/modelo2.jpg);
   background-size: cover;
 }
 
@@ -105,7 +105,9 @@
 .caja13 {
   grid-column: 4/5;
   grid-row: 6/11;
-  background-image: url(../imagenes/fashion3.jpg);
+  background-image: url(../imagenes/carterados.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {

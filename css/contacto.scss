@@ -11,8 +11,8 @@ $rojo: #d7391b;
     justify-content: center;
     height: 600px;
     margin-top: 40px;
-    border-top: solid black 1px;
-    border-bottom: solid black 1px;
+    border-top: solid $azul 1px;
+    border-bottom: solid $azul 1px;
     img {
         max-width: 100%;
         height: auto;
@@ -39,8 +39,8 @@ $rojo: #d7391b;
     margin-top: 70px;
     column-gap: 30px;
     row-gap: 30px;
-    border-top: solid black 1px;
-    border-bottom: solid black 1px;
+    border-top: solid $azul 1px;
+    border-bottom: solid $azul 1px;
     
     .box {
     max-width: 100%;
@@ -52,12 +52,12 @@ $rojo: #d7391b;
 .box1 {
     grid-column: 1/2;
     grid-row: 1/2;
-    border-right: solid black 1px;
+    border-right: solid $azul 1px;
 }
 .box2 {
     grid-column: 2/4;
     grid-row: 1/3;
-    background-image: url(../imagenes/zapatos.jpg);
+    background-image: url(../imagenes/byn.jpg);
     h1 {
     font-family: $titulo-font;
     font-size: 80px;
@@ -76,7 +76,7 @@ $rojo: #d7391b;
 .box4 {
     grid-column: 1/2;
     grid-row: 2/3;
-    border-right: solid black 1px;
+    border-right: solid $azul 1px;
 }
 .box5 {
     grid-column: 4/5;
@@ -139,8 +139,8 @@ $rojo: #d7391b;
     align-items: center;
     justify-content: center;
     margin-top: 70px;
-    border-top: solid black 1px;
-    border-bottom: solid black 1px;
+    border-top: solid $azul 1px;
+    border-bottom: solid $azul 1px;
 
     iframe{
         width: 60%;

@@ -155,14 +155,15 @@ header .navbar {
 }
 
 .contenedor-parrafo-index {
-  border: solid 1px black;
+  border: solid 50px white;
   margin-top: 30px;
 }
 .contenedor-parrafo-index .parrafo-index {
-  font-weight: 100;
+  font-weight: 200;
   font-size: 22px;
   color: black;
   text-align: center;
+  background-image: url(../imagenes/fondo5.jpg);
 }
 
 /* RESPONSIVE */
@@ -272,7 +273,7 @@ header .navbar {
 .caja9 {
   grid-column: 2/3;
   grid-row: 6/11;
-  background-image: url(../imagenes/fashion1.jpg);
+  background-image: url(../imagenes/modelo2.jpg);
   background-size: cover;
 }
 
@@ -298,7 +299,9 @@ header .navbar {
 .caja13 {
   grid-column: 4/5;
   grid-row: 6/11;
-  background-image: url(../imagenes/fashion3.jpg);
+  background-image: url(../imagenes/carterados.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
@@ -467,6 +470,7 @@ header .navbar {
   font-size: 140px;
   letter-spacing: 30px;
   color: #1a1c76;
+  text-shadow: 2px 2px 10px rgba(43, 42, 76, 0.5215686275);
   font-weight: bold;
   font-family: "Alfa Slab One", cursive;
 }
@@ -510,8 +514,8 @@ header .navbar {
   justify-content: center;
   height: 600px;
   margin-top: 40px;
-  border-top: solid black 1px;
-  border-bottom: solid black 1px;
+  border-top: solid #1a1c76 1px;
+  border-bottom: solid #1a1c76 1px;
 }
 .contenedor-imagenPrincipal img {
   max-width: 100%;
@@ -538,8 +542,8 @@ header .navbar {
   -moz-column-gap: 30px;
        column-gap: 30px;
   row-gap: 30px;
-  border-top: solid black 1px;
-  border-bottom: solid black 1px;
+  border-top: solid #1a1c76 1px;
+  border-bottom: solid #1a1c76 1px;
 }
 .contenedor-contacto .box {
   max-width: 100%;
@@ -551,12 +555,12 @@ header .navbar {
 .contenedor-contacto .box1 {
   grid-column: 1/2;
   grid-row: 1/2;
-  border-right: solid black 1px;
+  border-right: solid #1a1c76 1px;
 }
 .contenedor-contacto .box2 {
   grid-column: 2/4;
   grid-row: 1/3;
-  background-image: url(../imagenes/zapatos.jpg);
+  background-image: url(../imagenes/byn.jpg);
 }
 .contenedor-contacto .box2 h1 {
   font-family: "Alfa Slab One", cursive;
@@ -575,7 +579,7 @@ header .navbar {
 .contenedor-contacto .box4 {
   grid-column: 1/2;
   grid-row: 2/3;
-  border-right: solid black 1px;
+  border-right: solid #1a1c76 1px;
 }
 .contenedor-contacto .box5 {
   grid-column: 4/5;
@@ -634,8 +638,8 @@ header .navbar {
   align-items: center;
   justify-content: center;
   margin-top: 70px;
-  border-top: solid black 1px;
-  border-bottom: solid black 1px;
+  border-top: solid #1a1c76 1px;
+  border-bottom: solid #1a1c76 1px;
 }
 .contenedor-mapa iframe {
   width: 60%;
@@ -685,9 +689,9 @@ footer p {
   margin-top: 60px;
   color: #d7391b;
   font-weight: bold;
-  font-size: 100px;
+  font-size: 120px;
   font-family: "Alfa Slab One", cursive;
-  letter-spacing: 70px;
+  letter-spacing: 50px;
 }
 
 .contenedorImagen1 {
