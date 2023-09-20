@@ -93,6 +93,7 @@ a:hover::after {
 }
 /* FIN NAVBAR */
 /* INDEX COMIENZA */
+
 .nombre {
     border: solid 1px black;
     padding: 10px;
@@ -103,12 +104,18 @@ a:hover::after {
     height: 90px;
     margin-left: 15px;
     margin-top: 10px;
-
-}
-#spanNombre {
+    h1{
+        transition: 2s;
+    }
+    h1:hover{
+        transform: rotatey(360deg);
+    }
+    #spanNombre {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
+}
+
 }
 
 .tituloSaludo {
@@ -121,8 +128,6 @@ a:hover::after {
     margin-left: 20px;
     color: white;
 }
-
-
 .contenedor-polas{
     display: grid;
     grid-template-columns: repeat(2, 500px);
@@ -175,7 +180,7 @@ a:hover::after {
 
     .tituloSaludo{
         margin-left: 0px;
-        font-size: 50px;
+        font-size: 40px;
     }
 }    
 @media only screen and (min-width: 768px) and (max-width: 1050px ){
@@ -194,71 +199,53 @@ a:hover::after {
 /* TRABAJEMOS TERMINA */
 
 /* ULTIMO PROYECTO EMPIEZA */
-.container-enfoque {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        position: relative;
-        margin-bottom: 160px;
-        margin-top: 40px;
-    }
-    .tituloGrande2 {
-        color: #1a1c76;
-        font-weight: bold;
-        font-family: "Alfa Slab One", cursive;
-    }
+.contenedor-titulogrande2 {
+        margin-bottom: 30px;  
+        margin-left: 10px;
+        .tituloGrande2 {
+            display: flex;
+            justify-content:flex-start ;
+            margin-top: 10px;
+            font-size: 140px;
+            letter-spacing: 30px;
+            color: #1a1c76;
+            font-weight: bold;
+            font-family: "Alfa Slab One", cursive;
+}
+}
     .carrusel {
         width: 70% !important;
         margin: 0 auto !important;
-        position: absolute;
+        position: relative;
         max-width: 70%;
-        z-index: 2 !important;
-        box-shadow: 2px 2px 15px #2b2a4c;
-    }
-    @media only screen and (max-width: 480px) {
-    .tituloGrande2 {
-        letter-spacing: 20px;
-        font-size: 50px;
+        margin-top: 30px !important;
+        .carousel-fade{
+            position: absolute;
+            box-shadow: 2px 2px 15px #2b2a4c;
+            object-fit: cover;
 }
-    .carrusel{
-        margin-top: 40px !important;
-        width: 100% !important;
-        display: flex;
-        justify-content: center;
-    }
+}
+
+    @media only screen and (min-width: 320px)and (max-width: 600px) {
+        .contenedor-titulogrande2{
+            width: 100%;
+
+        
+            .tituloGrande2 {
+        letter-spacing: 5px;
+        font-size: 45px;
+}
+}
 
 }
-    @media only screen and (min-width: 768px) {
-    .tituloGrande2 {
-        font-size: 90px;
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        .contenedor-titulogrande2{
+            width: 100%;
+        .tituloGrande2 {
+        letter-spacing: 20px;
+        font-size: 95px;
 }
-    .carrusel {
-        width: 70% !important;
-        margin-top: 40px !important;
 }
-}
-    @media only screen and (min-width: 1200px) { 
-    .container-enfoque {
-        display: flex;
-        justify-content: left;
-        text-align: center;
-        margin-bottom: 160px;
-        margin-top: 40px;
-        }
-    .tituloGrande2 {
-        margin-top: 10px;
-        font-size: 150px;
-        letter-spacing: 30px;
-        margin-left: 40px;
-}
-    .carrusel {
-        width:850px !important;
-        margin-top: 90px !important;
-        margin-left: 420px !important;
-        box-shadow: 2px 2px 15px #2b2a4c;
-    }
 }
 /* ULTIMO PROYECTO TERMINA */
 
@@ -273,7 +260,7 @@ footer {
     background-color: white;
     text-align: start;
 
-    .icono {
+    .icono{
     color: black;
     text-decoration: none;
     margin-left: 25px;
@@ -287,16 +274,13 @@ footer {
 
     p{ 
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         color: black;
         font-size: 18px;
         font-family: 'Inclusive Sans', sans-serif;
         margin-top: 100px;
     }
 }  
-
-
-
 
   /*  FOOTER TERMINA */
 

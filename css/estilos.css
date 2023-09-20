@@ -104,8 +104,13 @@ header .navbar {
   margin-left: 15px;
   margin-top: 10px;
 }
-
-#spanNombre {
+.nombre h1 {
+  transition: 2s;
+}
+.nombre h1:hover {
+  transform: rotatey(360deg);
+}
+.nombre #spanNombre {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
@@ -173,7 +178,7 @@ header .navbar {
   }
   .tituloSaludo {
     margin-left: 0px;
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1050px) {
@@ -451,18 +456,16 @@ header .navbar {
 }
 /* TRABAJEMOS TERMINA */
 /* ULTIMO PROYECTO EMPIEZA */
-.container-enfoque {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  margin-bottom: 160px;
-  margin-top: 40px;
+.contenedor-titulogrande2 {
+  margin-bottom: 30px;
+  margin-left: 10px;
 }
-
-.tituloGrande2 {
+.contenedor-titulogrande2 .tituloGrande2 {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+  font-size: 140px;
+  letter-spacing: 30px;
   color: #1a1c76;
   font-weight: bold;
   font-family: "Alfa Slab One", cursive;
@@ -471,52 +474,33 @@ header .navbar {
 .carrusel {
   width: 70% !important;
   margin: 0 auto !important;
-  position: absolute;
+  position: relative;
   max-width: 70%;
-  z-index: 2 !important;
+  margin-top: 30px !important;
+}
+.carrusel .carousel-fade {
+  position: absolute;
   box-shadow: 2px 2px 15px #2b2a4c;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-@media only screen and (max-width: 480px) {
-  .tituloGrande2 {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .contenedor-titulogrande2 {
+    width: 100%;
+  }
+  .contenedor-titulogrande2 .tituloGrande2 {
+    letter-spacing: 5px;
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .contenedor-titulogrande2 {
+    width: 100%;
+  }
+  .contenedor-titulogrande2 .tituloGrande2 {
     letter-spacing: 20px;
-    font-size: 50px;
-  }
-  .carrusel {
-    margin-top: 40px !important;
-    width: 100% !important;
-    display: flex;
-    justify-content: center;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .tituloGrande2 {
-    font-size: 90px;
-  }
-  .carrusel {
-    width: 70% !important;
-    margin-top: 40px !important;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .container-enfoque {
-    display: flex;
-    justify-content: left;
-    text-align: center;
-    margin-bottom: 160px;
-    margin-top: 40px;
-  }
-  .tituloGrande2 {
-    margin-top: 10px;
-    font-size: 150px;
-    letter-spacing: 30px;
-    margin-left: 40px;
-  }
-  .carrusel {
-    width: 850px !important;
-    margin-top: 90px !important;
-    margin-left: 420px !important;
-    box-shadow: 2px 2px 15px #2b2a4c;
+    font-size: 95px;
   }
 }
 /* ULTIMO PROYECTO TERMINA */
@@ -680,7 +664,7 @@ footer .icono:hover {
 }
 footer p {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   color: black;
   font-size: 18px;
   font-family: "Inclusive Sans", sans-serif;
