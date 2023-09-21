@@ -283,7 +283,17 @@ footer {
 }  
 
   /*  FOOTER TERMINA */
-
+.boton{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 40px;
+    bottom: 25px;
+    font-size: 30px;
+    text-align: center;
+    border: solid 1px black;
+    color: rgba(0, 0, 0, 0.708);
+}
 /* GALERIA DE IMAGENES EMPIEZA  */
 @import "galeria.scss";
 /* GALERIA DE IMAGENES TERMINA  */

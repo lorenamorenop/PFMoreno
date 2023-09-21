@@ -14,6 +14,7 @@
 .contenedorTrabajemos .caja {
   border: solid #1a1c76 1.5px;
   background-position: center;
+  background-color: rgba(173, 164, 154, 0.1960784314);
 }
 
 .caja1 {
@@ -29,7 +30,8 @@
   font-family: "Alfa Slab One", cursive;
   font-size: 80px;
   letter-spacing: 2px;
-  color: white;
+  color: rgba(255, 255, 255, 0.671);
+  margin-top: 15%;
 }
 
 .caja2 {

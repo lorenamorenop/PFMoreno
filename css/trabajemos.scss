@@ -21,6 +21,7 @@ $rojo: #d7391b;
 .caja {
     border: solid $azul 1.5px;
     background-position: center;
+    background-color: #ada49a32;
     }
 }
 .caja1 {
@@ -35,7 +36,8 @@ $rojo: #d7391b;
     font-family: $titulo-font;
     font-size: 80px;
     letter-spacing: 2px;
-    color: white;
+    color: rgba(255, 255, 255, 0.671);
+    margin-top: 15%;
 }
 }
 .caja2 {

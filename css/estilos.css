@@ -208,6 +208,7 @@ header .navbar {
 .contenedorTrabajemos .caja {
   border: solid #1a1c76 1.5px;
   background-position: center;
+  background-color: rgba(173, 164, 154, 0.2784313725);
 }
 
 .caja1 {
@@ -223,7 +224,8 @@ header .navbar {
   font-family: "Alfa Slab One", cursive;
   font-size: 80px;
   letter-spacing: 2px;
-  color: white;
+  color: rgba(255, 255, 255, 0.671);
+  margin-top: 15%;
 }
 
 .caja2 {
@@ -676,6 +678,18 @@ footer p {
 }
 
 /*  FOOTER TERMINA */
+.boton {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 40px;
+  bottom: 25px;
+  font-size: 30px;
+  text-align: center;
+  border: solid 1px black;
+  color: rgba(0, 0, 0, 0.708);
+}
+
 /* GALERIA DE IMAGENES EMPIEZA  */
 * {
   margin: 0;
@@ -688,6 +702,7 @@ footer p {
   justify-content: center;
   margin-top: 60px;
   color: #d7391b;
+  text-shadow: 1px 1px 5px rgba(215, 58, 27, 0.4509803922);
   font-weight: bold;
   font-size: 120px;
   font-family: "Alfa Slab One", cursive;
