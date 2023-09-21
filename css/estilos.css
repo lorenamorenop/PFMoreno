@@ -208,14 +208,16 @@ header .navbar {
 .contenedorTrabajemos .caja {
   border: solid #1a1c76 1.5px;
   background-position: center;
-  background-color: rgba(173, 164, 154, 0.2784313725);
+  background-color: rgba(173, 164, 154, 0.1960784314);
 }
 
 .caja1 {
   grid-column: 1/3;
   grid-row: 1/6;
-  background-image: url(../imagenes/jean.jpg);
+  background-image: url(../imagenes/foto1.jpg);
   background-size: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .caja1 h1 {
   display: flex;
@@ -224,7 +226,7 @@ header .navbar {
   font-family: "Alfa Slab One", cursive;
   font-size: 80px;
   letter-spacing: 2px;
-  color: rgba(255, 255, 255, 0.671);
+  color: rgba(255, 255, 255, 0.725);
   margin-top: 15%;
 }
 
@@ -457,6 +459,11 @@ header .navbar {
     grid-column: 2/3;
     grid-row: 16/20;
     background-image: url(../imagenes/fashion3.jpg);
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+  .contenedorTrabajemos {
+    grid-template-columns: repeat(4, 250px);
   }
 }
 /* TRABAJEMOS TERMINA */

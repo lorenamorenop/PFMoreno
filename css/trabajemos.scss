@@ -27,8 +27,9 @@ $rojo: #d7391b;
 .caja1 {
     grid-column: 1/3;
     grid-row: 1/6;
-    background-image: url(../imagenes/jean.jpg);
+    background-image: url(../imagenes/foto1.jpg);
     background-size: 350px;
+    object-fit: cover;
     h1{
     display: flex;
     justify-content: center;
@@ -36,7 +37,7 @@ $rojo: #d7391b;
     font-family: $titulo-font;
     font-size: 80px;
     letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.671);
+    color: rgba(255, 255, 255, 0.725);
     margin-top: 15%;
 }
 }
@@ -271,5 +272,7 @@ $rojo: #d7391b;
 }
 }
 @media only screen and (min-width:1025px) and (max-width:1400px){
-
+    .contenedorTrabajemos {
+        grid-template-columns: repeat(4, 250px);
+}
 }
