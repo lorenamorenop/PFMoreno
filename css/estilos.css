@@ -602,7 +602,11 @@ header .navbar {
 }
 
 @media (max-width: 768px) {
+  .contenedor-imagenPrincipal {
+    height: 300px;
+  }
   .contenedor-contacto {
+    margin-top: 20px;
     grid-template-columns: repeat(2, 140px);
     grid-template-rows: repeat(5, 140px);
     height: auto;
