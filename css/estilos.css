@@ -133,11 +133,11 @@ header .navbar {
   grid-template-rows: 700px;
   justify-content: center;
   -moz-column-gap: 50px;
-  column-gap: 50px;
+       column-gap: 50px;
 }
 .contenedor-polas .pola {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -187,11 +187,16 @@ header .navbar {
     grid-template-columns: repeat(2, 450px);
     grid-template-rows: 600px;
     -moz-column-gap: 30px;
-    column-gap: 30px;
+         column-gap: 30px;
   }
 }
 /* INDEX TERMINA */
 /* TRABAJEMOS COMIENZA */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .contenedorTrabajemos {
   display: grid;
@@ -212,7 +217,7 @@ header .navbar {
   background-image: url(../imagenes/foto1.jpg);
   background-size: 350px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .caja1 h1 {
   display: flex;
@@ -300,7 +305,7 @@ header .navbar {
   grid-row: 6/11;
   background-image: url(../imagenes/carterados.jpg);
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
@@ -322,6 +327,8 @@ header .navbar {
     grid-column: 1/3;
     grid-row: 2/4;
     background-image: url(../imagenes/cartera.jpg);
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .contenedorTrabajemos .caja4 {
     grid-column: 1/3;
@@ -490,7 +497,7 @@ header .navbar {
   position: absolute;
   box-shadow: 2px 2px 15px #2b2a4c;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
@@ -544,7 +551,7 @@ header .navbar {
   justify-content: center;
   margin-top: 70px;
   -moz-column-gap: 30px;
-  column-gap: 30px;
+       column-gap: 30px;
   row-gap: 30px;
   border-top: solid #1a1c76 1px;
   border-bottom: solid #1a1c76 1px;
@@ -591,7 +598,7 @@ header .navbar {
   background-image: url(../imagenes/qr.png);
   background-color: #ada49a;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -600,7 +607,7 @@ header .navbar {
     grid-template-rows: repeat(5, 140px);
     height: auto;
     -moz-column-gap: 1.5px;
-    column-gap: 1.5px;
+         column-gap: 1.5px;
   }
   .contenedor-contacto .box1 {
     grid-column: 1/2;
@@ -631,7 +638,7 @@ header .navbar {
     justify-content: center;
     margin-top: 70px;
     -moz-column-gap: 10px;
-    column-gap: 10px;
+         column-gap: 10px;
     row-gap: 30px;
   }
 }
@@ -730,7 +737,7 @@ footer p {
   grid-template-columns: repeat(4, 300px);
   grid-template-rows: repeat(7, 200px);
   -moz-column-gap: 10px;
-  column-gap: 10px;
+       column-gap: 10px;
   row-gap: 10px;
 }
 

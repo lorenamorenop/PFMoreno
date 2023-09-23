@@ -133,6 +133,8 @@
     grid-column: 1/3;
     grid-row: 2/4;
     background-image: url(../imagenes/cartera.jpg);
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .contenedorTrabajemos .caja4 {
     grid-column: 1/3;
